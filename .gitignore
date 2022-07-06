@@ -4,3 +4,80 @@ app/jni/SDL/src
 app/build
 app/.externalNativeBuild
 app/.cxx
+
+!app/jni/src
+
+# Object files
+app/jni/src/*.o
+app/jni/src/*.obj
+app/jni/src/*.elf
+
+# Linker output
+app/jni/src/*.ilk
+app/jni/src/*.exp
+
+# Precompiled Headers
+app/jni/src/*.gch
+app/jni/src/*.pch
+
+# Libraries
+app/jni/src/*.a
+app/jni/src/*.la
+app/jni/src/*.lo
+
+# Shared objects (inc. Windows DLLs)
+app/jni/src/*.dll
+app/jni/src/*.so
+app/jni/src/*.so.*
+app/jni/src/*.dylib
+
+# Executables
+app/jni/src/*.exe
+app/jni/src/*.out
+app/jni/src/*.app
+app/jni/src/*.hex
+
+# Debug files
+app/jni/src/*.dSYM/
+app/jni/src/*.su
+app/jni/src/*.idb
+app/jni/src/*.pdb
+
+# datadump
+app/jni/src/tools/ddump/*
+
+# Text editor remnants
+app/jni/src/*.swp
+.vscode/*
+
+# General project-specific ignores
+app/jni/src/__pycache__/*
+app/jni/src/doxygen/doxygen/*
+app/jni/src/build/*
+app/jni/src/*.dump
+app/jni/src/*.mio0
+app/jni/src/*.z64
+app/jni/src/*.map
+app/jni/src/.assets-local.txt
+app/jni/src/sm64_save_file.bin
+app/jni/src/sm64config.txt
+
+# Assets. Generally ignored, but ones with "custom" in the name are fine.
+app/jni/src/levels/**/*.png
+app/jni/src/actors/**/*.png
+app/jni/src/textures/**/*.png
+app/jni/src/assets/**/*.bin
+app/jni/src/sound/**/*.m64
+app/jni/src/sound/**/*.aiff
+!app/jni/src/levels/**/*custom*.png
+!app/jni/src/levels/**/*custom*/**/*.png
+!app/jni/src/actors/**/*custom*.png
+!app/jni/src/actors/**/*custom*/**/*.png
+!app/jni/src/textures/**/*custom*.png
+!app/jni/src/textures/**/*custom*/**/*.png
+!app/jni/src/sound/**/*custom*.m64
+!app/jni/src/sound/**/*custom*/**/*.m64
+!app/jni/src/sound/**/*custom*.aiff
+!app/jni/src/sound/**/*custom*/**/*.aiff
+!app/jni/src/assets/**/*custom*.bin
+!app/jni/src/assets/**/*custom*/**/*.bin
