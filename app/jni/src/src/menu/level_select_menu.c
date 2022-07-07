@@ -113,8 +113,8 @@ s16 level_select_input_loop(void) {
 
     gCurrSaveFileNum = 4; // file 4 is used for level select tests
     gCurrActNum = 6;
-    print_text_centered(160, 80, "SELECT STAGE");
-    print_text_centered(160, 30, "PRESS START BUTTON");
+    print_text_centered(160, 80, "TRIA NIVELL");
+    print_text_centered(160, 30, "PREM START");
     print_text_fmt_int(40, 60, "%2d", gCurrLevelNum);
     print_text(80, 60, gLevelSelect_StageNamesText[gCurrLevelNum - 1]); // print stage name
 

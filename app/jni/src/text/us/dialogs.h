@@ -1,2102 +1,2335 @@
 // Parameters: dialog enum ID, (unused), lines per box, left offset, width
 
-#ifdef VERSION_EU
-#define COMRADES "friends"
-#define PLASTERED "splattered"
-#define SCAM_ME "cheat!\n"
-#define SCRAM "get lost"
-#define YOU_CANT_SWIM_IN_IT "Its too heavy to swim\nwith."
-#define GIVE_UP "give up"
-#else
-#define COMRADES "comrades"
-#define PLASTERED "plastered"
-#define SCAM_ME "scam\nME. "
-#define SCRAM "scram--"
-#define YOU_CANT_SWIM_IN_IT "You can't swim in it."
-#define GIVE_UP "give"
-#endif
-
+// FET
 DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
-Wow! You're smack in the\n\
-middle of the battlefield.\n\
-You'll find the Power\n\
-Stars that Bowser stole\n\
-inside the painting\n\
-worlds.\n\
-First, talk to the\n\
-Bob-omb Buddy. (Press [B]\n\
-to talk.) He'll certainly\n\
-help you out, and so will\n\
-his " COMRADES " in other\n\
-areas.\n\
-To read signs, stop, face\n\
-them and press [B]. Press [A]\n\
-or [B] to scroll ahead. You\n\
-can talk to some other\n\
-characters by facing them\n\
-and pressing [B]."))
+Uau! Ets al bell mig del\n\
+camp de batalla. Trobarま s\n\
+les Estrelles de Poder que\n\
+en Bowser va robar dins\n\
+els mす ns dels quadres.\n\
+Primerament, parla amb el\n\
+col&lega Bob-omb (prem\n\
+[B] per parlar). Tant ell\n\
+com els seus camarades\n\
+d'altres ま rees segur et\n\
+faran un bon cop de mま .\n\
+Per a llegir cartells,\n\
+atura't davant d'un i\n\
+prem [B]. Prem [A] o [B]\n\
+per seguir llegint.\n\
+Tambさ  pots parlar amb\n\
+altres individus\n\
+encarant-hi i prement [B]."))
 
+// FET
 DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
-Watch out! If you wander\n\
-around here, you're liable\n\
-to be " PLASTERED " by a\n\
-water bomb!\n\
-Those enemy Bob-ombs love\n\
-to fight, and they're\n\
-always finding ways to\n\
-attack.\n\
-This meadow has become\n\
-a battlefield ever since\n\
-the Big Bob-omb got his\n\
-paws on the Power Star.\n\
-Can you recover the Star\n\
-for us? Cross the bridge\n\
-and go left up the path\n\
-to find the Big Bob-omb.\n\
-Please come back to see\n\
-me after you've retrieved\n\
-the Power Star!"))
+Vigila! Si voltes per aquし \n\
+t'arrisques a ser\n\
+colpejat per una\n\
+bomba d'aigua!\n\
+A aquests Bob-ombs\n\
+enemics els encanta\n\
+lluitar, i sempre troben\n\
+formes d'atacar.\n\
+Aquest prat s'ha tornat\n\
+un camp de batalla des\n\
+que el Gran Bob-omb posま \n\
+les urpes a una Estrella.\n\
+Pots recuperar l'Estrella\n\
+per nosaltres? Creua el\n\
+pont i segueix el camし \n\
+que discorre cap a\n\
+l'esquerra fins a trobar\n\
+el Gran Bob-omb.\n\
+\n\
+\n\
+Si us plau, vine a veure'm\n\
+tan bon punt hagis\n\
+recuperat l'Estrella!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_002, 1, 4, 95, 200, _("\
-Hey, you! It's dangerous\n\
-ahead, so listen up! Take\n\
-my advice.\n\
+Ei, tu! Avant さ s perillす s,\n\
+fes-me cas! Et donarさ \n\
+algun consell.\n\
 \n\
-Cross the two\n\
-bridges ahead, then\n\
-watch for falling\n\
-water bombs.\n\
-The Big Bob-omb at the\n\
-top of the mountain is\n\
-very powerful--don't let\n\
-him grab you!\n\
-We're Bob-omb Buddies,\n\
-and we're on your side.\n\
-You can talk to us\n\
-whenever you'd like to!"))
+Creua els dos ponts\n\
+d'enfront i vigila les\n\
+les bombes d'aigua que\n\
+cauen arreu.\n\
+El Gran Bob-omb al cim\n\
+de la muntanya さ s molt\n\
+poderす s, no deixis que\n\
+t'enxampi!\n\
+Nosaltres som Bob-ombs\n\
+col&legues i som al teu\n\
+al teu costat. Parla'ns\n\
+sempre que vulguis!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_003, 1, 5, 95, 200, _("\
-Thank you, Mario! The Big\n\
-Bob-omb is nothing but a\n\
-big dud now! But the\n\
-battle for the castle has\n\
-just begun.\n\
-Other enemies are holding\n\
-the other Power Stars. If\n\
-you recover more Stars,\n\
-you can open new doors\n\
-that lead to new worlds!\n\
-My Bob-omb Buddies are\n\
-waiting for you. Be sure\n\
-to talk to them--they'll\n\
-set up cannons for you."))
+Grま cies, Mario! El gran\n\
+Bob-Omb ja no さ s mさ s\n\
+que un perdedor! Perた  la\n\
+batalla pel castell no\n\
+ha fet mさ s que comenむ ar.\n\
+Altres enemics tenen mさ s\n\
+Estrelles. Si en recuperes\n\
+mさ s podrま s obrir noves\n\
+portes que et duran a\n\
+nous mす ns!\n\
+Els meus camarades\n\
+Bob-Ombs t'esperen.\n\
+Assegura't de parlar\n\
+amb ells, et prepararan\n\
+els canons."))
 
+//FET
 DEFINE_DIALOG(DIALOG_004, 1, 3, 95, 200, _("\
-We're peace-loving\n\
-Bob-ombs, so we don't use\n\
-cannons.\n\
-But if you'd like\n\
-to blast off, we don't\n\
-mind. Help yourself.\n\
-We'll prepare all of the\n\
-cannons in this course for\n\
-you to use. Bon Voyage!"))
+Nosaltres som Bob-oms\n\
+pacし fics, i per aixた  no\n\
+utilitzem canons.\n\
+Perた  si tu vols\n\
+llencar-t'hi no ens\n\
+importa. Encarrega-te'n\n\
+tu mateix. Et prepararem\n\
+tots els canons d'aquest\n\
+mす n per a tu. Bon Viatge!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_005, 1, 3, 30, 200, _("\
-Hey, Mario! Is it true\n\
-that you beat the Big\n\
-Bob-omb? Cool!\n\
-You must be strong. And\n\
-pretty fast. So, how fast\n\
-are you, anyway?\n\
-Fast enough to beat me...\n\
-Koopa the Quick? I don't\n\
-think so. Just try me.\n\
-How about a race to the\n\
-mountaintop, where the\n\
-Big Bob-omb was?\n\
-Whaddya say? When I say\n\
-『Go,』 let the race begin!\n\
+Ei Mario! De debた \n\
+has derrotat el Gran\n\
+Bob-omb? Genial!\n\
+Deus ser fort, i ben\n\
+rま pid. I, per cert,\n\
+com de rま pid ets?\n\
+Prou rま pid com per\n\
+derrotar-me a mi...\n\
+En Koopa el Rま pid? No\n\
+ho crec. Posa'm a prova\n\
+si vols. Quこ  et sembla\n\
+una cursa fins al cim\n\
+del turす , on hi era\n\
+el gran Bob-omb?\n\
+Quこ  me'n dius? Quan\n\
+diguis 『Endavant』,\n\
+comenむ arem.\n\
 \n\
-Ready....\n\
+Llestos....\n\
 \n\
-//Go!////Don't Go"))
+//Endavant/Millor no"))
 
+//FET
 DEFINE_DIALOG(DIALOG_006, 1, 3, 30, 200, _("\
-Hey!!! Don't try to " SCAM_ME
-"You've gotta run\n\
-the whole course.\n\
-Later. Look me up when\n\
-you want to race for\n\
-real."))
+Ei!!! No m'enganyis.\n\
+Has de cす rrer la\n\
+cursa sencera.\n\
+Si en un altre moment\n\
+vols cす rrer de debた \n\
+vine'm a buscar."))
 
+//FET
 DEFINE_DIALOG(DIALOG_007, 1, 5, 30, 200, _("\
-Hufff...fff...pufff...\n\
-Whoa! You...really...are...\n\
-fast! A human blur!\n\
-Here you go--you've won\n\
-it, fair and square!"))
+Ufff... Ufff... ufff...\n\
+Bufa! Ets... Realment...\n\
+Rま pid! Un home bala!\n\
+Aqui la tens, te l'has\n\
+guanyat justament!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
-BEWARE OF CHAIN CHOMP\n\
-Extreme Danger!\n\
-Get close and press [C]^\n\
-for a better look.\n\
-Scary, huh?\n\
-See the Red Coin on top\n\
-of the stake?\n\
+COMPTE AMB EL\n\
+CHOMP CADENES\n\
 \n\
-When you collect eight of\n\
-them, a Power Star will\n\
-appear in the meadow\n\
-across the bridge."))
+Extremament perillす s!\n\
+Apropa-t'hi i prem [C]^\n\
+per observar-lo millor.\n\
+Fa por, eh?\n\
+\n\
+\n\
+Veus la moneda roja\n\
+sobre l'estaca?\n\
+\n\
+Quan n'agafis vuit\n\
+una estrella eixirま \n\
+del prat a l'altre\n\
+costat del pont."))
 
+// FET
 DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
-Long time, no see! Wow,\n\
-have you gotten fast!\n\
-Have you been training\n\
-on the sly, or is it the\n\
-power of the Stars?\n\
-I've been feeling down\n\
-about losing the last\n\
-race. This is my home\n\
-course--how about a\n\
-rematch?\n\
-The goal is in\n\
-Windswept Valley.\n\
-Ready?\n\
+Quant de temps! Uau,\n\
+t'has tornat rま pid!\n\
+Has estat entrenant\n\
+d'amagat o さ s el poder\n\
+de les Estrelles?\n\
+He estat abatut per\n\
+haver perdut la darrera\n\
+cursa. Aquest mす n さ s\n\
+casa meva. Quこ  et\n\
+sembla una revenja?\n\
+La meta さ s a\n\
+la Vall del Vent.\n\
+Llest?\n\
 \n\
-//Go//// Don't Go"))
+//Endavant/Ara no"))
 
+// FET
 DEFINE_DIALOG(DIALOG_010, 1, 4, 30, 200, _("\
-You've stepped on the\n\
-Wing Cap Switch. Wearing\n\
-the Wing Cap, you can\n\
-soar through the sky.\n\
-Now Wing Caps will pop\n\
-out of all the red blocks\n\
-you find.\n\
+Has premut el Botす  del\n\
+Barret Alat. Amb el\n\
+Barret Alat pots volar\n\
+a travさ s del cel.\n\
+Ara, Barrets Alats\n\
+sorgiran de tots els\n\
+blocs vermells\n\
+que trobis.\n\
+Vols desar la partida?\n\
 \n\
-Would you like to Save?\n\
-\n\
-//Yes////No"))
+//Sし //// No"))
 
+// FET
 DEFINE_DIALOG(DIALOG_011, 1, 4, 30, 200, _("\
-You've just stepped on\n\
-the Metal Cap Switch!\n\
-The Metal Cap makes\n\
-Mario invincible.\n\
-Now Metal Caps will\n\
-pop out of all of the\n\
-green blocks you find.\n\
+Has premut el Botす  del\n\
+Barret Metま l&lic!\n\
+Aquest barret fa en\n\
+Mario invencible.\n\
+Ara, Barrets\n\
+Metま l&lics sorgiran\n\
+dels blocs verds que\n\
+trobis.\n\
+Vols desar la partida?\n\
 \n\
-Would you like to Save?\n\
-\n\
-//Yes////No"))
+//Sし //// No"))
 
+// FET
 DEFINE_DIALOG(DIALOG_012, 1, 4, 30, 200, _("\
-You've just stepped on\n\
-the Vanish Cap Switch.\n\
-The Vanish Cap makes\n\
-Mario disappear.\n\
-Now Vanish Caps will pop\n\
-from all of the blue\n\
-blocks you find.\n\
+Has premut el Botす  del\n\
+Barret Esvaみ t.\n\
+El Barret Esvaみ t fa\n\
+desaparこ ixer en Mario.\n\
+Ara, Barrets Esvaみ ts\n\
+sorgiran de tots els\n\
+blocs blaus que trobis.\n\
 \n\
-Would you like to Save?\n\
+Vols desar la partida?\n\
 \n\
-//Yes////No"))
+//Sし //// No"))
 
+// FET
 DEFINE_DIALOG(DIALOG_013, 1, 5, 30, 200, _("\
-You've collected 100\n\
-coins! Mario gains more\n\
-power from the castle.\n\
-Do you want to Save?\n\
-//Yes////No"))
+Has aconseguit 100\n\
+monedes! En Mario rep\n\
+mさ s poder del castell.\n\
+Vols desar la partida?\n\
+//Sし //// No"))
 
+//FET
 DEFINE_DIALOG(DIALOG_014, 1, 4, 30, 200, _("\
-Wow! Another Power Star!\n\
-Mario gains more courage\n\
-from the power of the\n\
-castle.\n\
-Do you want to Save?\n\
+Uau! Una altra Estrella!\n\
+En Mario s'encoratja\n\
+grま cies al poder\n\
+del castell.\n\
+Vols desar la partida?\n\
 \n\
-//You Bet//Not Now"))
+// Esclar// Ara no"))
 
+//FET
 DEFINE_DIALOG(DIALOG_015, 1, 4, 30, 200, _("\
-You can punch enemies to\n\
-knock them down. Press [A]\n\
-to jump, [B] to punch.\n\
-Press [A] then [B] to Kick.\n\
-To pick something up,\n\
-press [B], too. To throw\n\
-something you're holding,\n\
-press [B] again."))
+Pots colpejar enemics per\n\
+derrotar-los. Prem [A]\n\
+per saltar i [B] per a\n\
+donar un cop de puny.\n\
+Prem [A] i desprさ s [B]\n\
+donar una puntada de peu.\n\
+Per agafar quelcom prem\n\
+tambさ  [B].\n\
+Per llenむ ar el que\n\
+duguis a sobre prem\n\
+[B] de nou."))
 
-DEFINE_DIALOG(DIALOG_016, 1, 3, 30, 200, _("\
-Hop on the shiny shell and\n\
-ride wherever you want to\n\
-go! Shred those enemies!"))
+//FET
+DEFINE_DIALOG(DIALOG_016, 1, 4, 30, 200, _("\
+Salta sobre la closca\n\
+brillant i patina allま \n\
+on vulguis! Carrega't\n\
+tots els enemics!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_017, 1, 4, 30, 200, _("\
-I'm the Big Bob-omb, lord\n\
-of all blasting matter,\n\
-king of ka-booms the\n\
-world over!\n\
-How dare you scale my\n\
-mountain? By what right\n\
-do you set foot on my\n\
-imperial mountaintop?\n\
-You may have eluded my\n\
-guards, but you'll never\n\
-escape my grasp...\n\
+Sす c el Gran Bob-omb, amo\n\
+de tota la matこ ria\n\
+explosiva i rei dels\n\
+ca-bums arreu del mす n!\n\
+Com t'atreveixes a\n\
+escalar la meva muntanya?\n\
+Per quins set sous vens\n\
+al meu imperial cim?\n\
+Potser has eludit els\n\
+guま rdies, perた  no\n\
+et podrま s escapar mai\n\
+de les meves urpes...\n\
+...ni prendre'm\n\
+l'Estrella. I per aixた \n\
+et desafio, Mario!\n\
 \n\
-...and you'll never take\n\
-away my Power Star. I\n\
-hereby challenge you,\n\
-Mario!\n\
-If you want the Star I\n\
-hold, you must prove\n\
-yourself in battle.\n\
+Si vols l'Estrella que\n\
+tinc, ho haurま s de\n\
+provar en batalla.\n\
 \n\
-Can you pick me up from\n\
-the back and hurl me to\n\
-this royal turf? I think\n\
-that you cannot!"))
+Et creus que em pots\n\
+agafar pel darrere i\n\
+llenむ ar-me a la reial\n\
+gespa? Jo diria que no!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_018, 1, 4, 30, 200, _("\
-I'm sleeping because...\n\
-...I'm sleepy. I don't\n\
-like being disturbed.\n\
-Please walk quietly."))
+Tinc molta son...\n\
+I el que menys m'agrada\n\
+さ s que em destorbin.\n\
+Millor camina en silenci."))
 
+//FET
 DEFINE_DIALOG(DIALOG_019, 1, 2, 30, 200, _("\
-Shhh! Please walk\n\
-quietly in the hallway!"))
+Xst! Si us plau, camina\n\
+en silenci al passadし s!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
-Dear Mario:\n\
-Please come to the\n\
-castle. I've baked\n\
-a cake for you.\n\
-Yours truly--\n\
-Princess Toadstool"))
+Estimat Mario:\n\
+Si us plau, vine al\n\
+castell. He fornejat\n\
+un pastし s per a tu.\n\
+Atentament...\n\
+Princesa Toadstool"))
 
+//FET
 DEFINE_DIALOG(DIALOG_021, 1, 5, 95, 200, _("\
-Welcome.\n\
-No one's home!\n\
-Now " SCRAM "\n\
-and don't come back!\n\
-Gwa ha ha!"))
+Benvingut.\n\
+Ningせ  さ s a casa!\n\
+Ara toca el dos\n\
+i no tornis mai mさ s!\n\
+Bua ha ha!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_022, 1, 2, 95, 200, _("\
-You need a key to open\n\
-this door."))
+Necessites una clau per\n\
+obrir aquesta porta."))
 
+//FET
 DEFINE_DIALOG(DIALOG_023, 1, 3, 95, 200, _("\
-This key doesn't fit!\n\
-Maybe it's for the\n\
-basement..."))
+Aquesta clau no encaixa!\n\
+Probablement sigui\n\
+del soterrani..."))
 
+//FET
 DEFINE_DIALOG(DIALOG_024, 1, 5, 95, 200, _("\
-You need Star power to\n\
-open this door. Recover a\n\
-Power Star from an enemy\n\
-inside one of the castle's\n\
-paintings."))
+Necessites una Estrella\n\
+per obrir aquesta porta.\n\
+recupera'n una d'un enemic\n\
+dins d'un dels quadres\n\
+del castell."))
 
+//FET
 DEFINE_DIALOG(DIALOG_025, 1, 4, 95, 200, _("\
-It takes the power of\n\
-3 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+Necessites el poder de\n\
+3 Estrelles per obrir\n\
+aquesta porta.\n\
+En necessites [%] mさ s."))
 
+//FET
 DEFINE_DIALOG(DIALOG_026, 1, 4, 95, 200, _("\
-It takes the power of\n\
-8 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+Necessites el poder de\n\
+8 Estrelles per obrir\n\
+aquesta porta.\n\
+En necessites [%] mさ s."))
 
+//FET
 DEFINE_DIALOG(DIALOG_027, 1, 4, 95, 200, _("\
-It takes the power of\n\
-30 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+Necessites el poder de\n\
+30 Estrelles per obrir\n\
+aquesta porta.\n\
+En necessites [%] mさ s."))
 
+//FET
 DEFINE_DIALOG(DIALOG_028, 1, 4, 95, 200, _("\
-It takes the power of\n\
-50 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+Necessites el poder de\n\
+50 Estrelles per obrir\n\
+aquesta porta.\n\
+En necessites [%] mさ s."))
 
+//FET
 DEFINE_DIALOG(DIALOG_029, 1, 5, 95, 200, _("\
-To open the door that\n\
-leads to the 『endless』\n\
-stairs, you need 70\n\
-Stars.\n\
-Bwa ha ha!"))
+Per obrir la porta que\n\
+du a les escales\n\
+『infinites』 necessites\n\
+70 Estrelles.\n\
+Bua ha ha!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_030, 1, 6, 30, 200, _("\
-Hello! The Lakitu Bros.,\n\
-cutting in with a live\n\
-update on Mario's\n\
-progress. He's about to\n\
-learn a technique for\n\
-sneaking up on enemies.\n\
-The trick is this: He has\n\
-to walk very slowly in\n\
-order to walk quietly.\n\
+Hola! Aquし  els Lakitu\n\
+Bros. informant en directe\n\
+del progrさ s d'en Mario.\n\
+Estま  a punt d'aprendre\n\
+la tこ cnica d'apropar-se\n\
+en silenci als enemics.\n\
+El truc さ s que ha de\n\
+caminar molt lentament\n\
+per fer-ho. Emprant els\n\
+nostres modes de\n\
+filmaciす , pots observar\n\
+tots els voltants amb\n\
+[C]> i [C]<. Prem [C]| per\n\
+veure l'acciす  des de lluny.\n\
+\n\
+Quan no puguis moure mさ s\n\
+la cま mera, emetrem un\n\
+soroll.\n\
 \n\
 \n\
-\n\
-And wrapping up filming\n\
-techniques reported on\n\
-earlier, you can take a\n\
-look around using [C]> and\n\
-[C]<. Press [C]| to view the\n\
-action from a distance.\n\
-When you can't move the\n\
-camera any farther, the\n\
-buzzer will sound. This is\n\
-the Lakitu Bros.,\n\
-signing off."))
+Fins aquし , els Lakitu\n\
+Bros, des del castell."))
 
+// FET
 DEFINE_DIALOG(DIALOG_031, 1, 5, 30, 200, _("\
-No way! You beat me...\n\
-again!! And I just spent\n\
-my entire savings on\n\
-these new Koopa\n\
-Mach 1 Sprint shoes!\n\
-Here, I guess I have to\n\
-hand over this Star to\n\
-the winner of the race.\n\
-Congrats, Mario!"))
+No pot ser! M'has\n\
+venむ ut... De nou!! I\n\
+aixた  que havia esgotat\n\
+tots els meus estalvis\n\
+en aquestes noves\n\
+bambes Koopa Mach 1!\n\
+Tさ , suposo que haig de\n\
+donar-te l'Estrella\n\
+per haver-me guanyat.\n\
+Enhorabona, Mario!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_032, 1, 5, 30, 200, _("\
-If you get the Wing Cap,\n\
-you can fly! Put the cap\n\
-on, then do a Triple\n\
-Jump--jump three times\n\
-in a row--to take off.\n\
-You can fly even higher\n\
-if you blast out of a\n\
-cannon wearing the\n\
-Wing Cap!\n\
+Si agafes el Barret Alat,\n\
+podrま s volar! Posa-te'l\n\
+i fes un Triple salt\n\
+(saltar 3 cops seguits)\n\
+per enlairar-te.\n\
 \n\
-Use the [C] Buttons to look\n\
-around while flying, and\n\
-press [Z] to land."))
+Pots volar encara mさ s alt\n\
+si utilitzes un canす  amb\n\
+el barret!\n\
+\n\
+Utilitza els botons\n\
+[C] per observar mentre\n\
+voles, i prem [Z]\n\
+per aterrar."))
 
+// FET
 DEFINE_DIALOG(DIALOG_033, 1, 6, 30, 200, _("\
-Ciao! You've reached\n\
-Princess Toadstool's\n\
-castle via a warp pipe.\n\
-Using the controller is a\n\
-piece of cake. Press [A] to\n\
-jump and [B] to attack.\n\
-Press [B] to read signs,\n\
-too. Use the Control Stick\n\
-in the center of the\n\
-controller to move Mario\n\
-around. Now, head for\n\
-the castle."))
+Ciao! Has arribat al\n\
+castell de la Princesa\n\
+Peach a travさ s d'una\n\
+canonada. Emprar els\n\
+controls さ s bufar\n\
+i fer ampolles!\n\
+Prem [A] per saltar i [B]\n\
+per atacar. Prem [B] per\n\
+a llegir cartells, tambさ .\n\
+Usa la palanca de control\n\
+esquerra del comandament\n\
+per moure en Mario arreu.\n\
+\n\
+\n\
+Ara, dirigeix-te al\n\
+castell."))
 
+// FET
 DEFINE_DIALOG(DIALOG_034, 1, 6, 30, 200, _("\
-Good afternoon. The\n\
-Lakitu Bros., here,\n\
-reporting live from just\n\
-outside the Princess's\n\
-castle.\n\
 \n\
-Mario has just arrived\n\
-on the scene, and we'll\n\
-be filming the action live\n\
-as he enters the castle\n\
-and pursues the missing\n\
-Power Stars.\n\
-As seasoned cameramen,\n\
-we'll be shooting from the\n\
-recommended angle, but\n\
-you can change the\n\
-camera angle by pressing\n\
-the [C] Buttons.\n\
-If we can't adjust the\n\
-view any further, we'll\n\
-buzz. To take a look at\n\
-the surroundings, stop\n\
-and press [C]^.\n\
+Bona tarda. Els Lakitu\n\
+Bros. informant en directe\n\
+des de fora el castell de\n\
+la Princesa Peach.\n\
 \n\
-Press [A] to resume play.\n\
-Switch camera modes with\n\
-the [R] Button. Signs along\n\
-the way will review these\n\
-instructions.\n\
+En Mario acaba d'arribar\n\
+a l'escena, i l'estarem\n\
+filmant tota la seva\n\
+aventura al castell\n\
+mentre cerca totes les\n\
+Estrelles desaparegudes.\n\
+Com a bons professionals,\n\
+estarem emetent la imatge\n\
+des de l'angle recomanat,\n\
+perた  el podrま s canviar\n\
+prement els botons [C].\n\
 \n\
-For now, reporting live,\n\
-this has been the\n\
-Lakitu Bros."))
+Si no ens podem ajustar\n\
+a l'angle, farem un\n\
+soroll. Per observar els\n\
+voltants, atura't en sec\n\
+i prem [C]^.\n\
+\n\
+Prem [A] per tornar al joc.\n\
+Canvia els modes de\n\
+cま mera amb el botす  [R].\n\
+Els rこ tols repartits arreu\n\
+et faran cinc cこ ntims\n\
+d'aquestes instructions.\n\
+\n\
+Fins aquし , els Lakitu Bros\n\
+al Castell de la\n\
+Princesa Peach."))
 
+// FET
 DEFINE_DIALOG(DIALOG_035, 1, 5, 30, 200, _("\
-There are four camera, or\n\
-『[C],』 Buttons. Press [C]^\n\
-to look around using the\n\
-Control Stick.\n\
+Hi ha quatre botons per\n\
+la cま mera『[C]』. Prem\n\
+[C]^ per observar emprant\n\
+la Palanca de Control.\n\
 \n\
-You'll usually see Mario\n\
-through Lakitu's camera.\n\
-It is the camera\n\
-recommended for normal\n\
-play.\n\
-You can change angles by\n\
-pressing [C]>. If you press\n\
-[R], the view switches to\n\
-Mario's camera, which\n\
-is directly behind him.\n\
-Press [R] again to return\n\
-to Lakitu's camera. Press\n\
-[C]| to see Mario from\n\
-afar, using either\n\
-Lakitu's or Mario's view."))
+Usualment veurま s en Mario\n\
+amb la cま mera d'en\n\
+Lakitu. さ s la cま mera\n\
+recomanada per jugar\n\
+normalment.\n\
+Canvia l'angle d'aquesta\n\
+prement [C]>. Si prems\n\
+[R], la vista canviarま  a\n\
+la cま mera d'en Mario, que\n\
+l'enfocarま  per darrere.\n\
+Prem [R] altre cop per\n\
+canviar a la vista d'en\n\
+Lakitu. Prem [C]| per veure\n\
+en Mario des de lluny,\n\
+emprant qualsevol vista."))
 
+// FET
 DEFINE_DIALOG(DIALOG_036, 1, 5, 30, 200, _("\
-OBSERVATION PLATFORM\n\
-Press [C]^ to take a look\n\
-around. Don't miss\n\
-anything!\n\
+PLATAFORMA DE GUAITA\n\
+Prem [C]^ per mirar els\n\
+voltants. No et perdis\n\
+res de res!\n\
 \n\
-Press [R] to switch to\n\
-Mario's camera. It\n\
-always follows Mario.\n\
-Press [R] again to switch\n\
-to Lakitu's camera.\n\
-Pause the game and\n\
-switch the mode to 『fix』\n\
-the camera in place while\n\
-holding [R]. Give it a try!"))
+Prem [R] per canviar\n\
+a la vista d'en Mario,\n\
+que sempre l'enfocarま .\n\
+Prこ mer [R] de nou canviarま \n\
+a la vista d'en Lakitu.\n\
+Pausa el joc i canvia\n\
+el mode a 『fixe』 i deixa\n\
+la cま mera quieta mentre\n\
+mantens [R]. Prova-ho!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_037, 1, 2, 30, 200, _("\
-I win! You lose!\n\
+He guanyat! Tu perds!\n\
 Ha ha ha ha!\n\
-You're no slouch, but I'm\n\
-a better sledder!\n\
-Better luck next time!"))
+No ets pas dolent, perた \n\
+sす c mさ s bon patinador.\n\
+Millor sort la propera!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_038, 1, 3, 95, 200, _("\
-Reacting to the Star\n\
-power, the door slowly\n\
-opens."))
+Reaccionant al poder\n\
+de les estrelles, la \n\
+porta s'obre lentament."))
 
-DEFINE_DIALOG(DIALOG_039, 1, 4, 30, 200, _("\
-No visitors allowed,\n\
-by decree of\n\
-the Big Bob-omb\n\
+// FET
+DEFINE_DIALOG(DIALOG_039, 1, 5, 30, 200, _("\
 \n\
-I shall never surrender my\n\
-Stars, for they hold the\n\
-power of the castle in\n\
-their glow.\n\
-They were a gift from\n\
-Bowser, the Koopa King\n\
-himself, and they lie well\n\
-hidden within my realm.\n\
-Not a whisper of their\n\
-whereabouts shall leave\n\
-my lips. Oh, all right,\n\
-perhaps one hint:\n\
-Heed the Star names at\n\
-the beginning of the\n\
-course.\n\
-//--The Big Bob-omb"))
+No es permeten visites,\n\
+per decret del Gran\n\
+Bob-omb.\n\
+\n\
+Mai cedirさ  les meves\n\
+Estrelles, ja que contenen\n\
+el poder del castell en\n\
+el seu esplendor.\n\
+\n\
+Son un regal d'en Bowser,\n\
+Sa Majestat Koopa, en\n\
+persona, i estan ben\n\
+amagades dins el\n\
+meu regne.\n\
+De mi no sentirま s una\n\
+sola paraula d'on sす n.\n\
+Bさ , d'acord, potser una\n\
+pista: Els noms dels mons.\n\
+/--El Gran Bob-omb"))
 
+// FET
 DEFINE_DIALOG(DIALOG_040, 1, 3, 30, 200, _("\
-Warning!\n\
-Cold, Cold Crevasse\n\
-Below!"))
+Alerta! Escletxa\n\
+ben, ben freda.\n\
+A sota!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_041, 1, 3, 30, 200, _("\
-I win! You lose!\n\
+He guanyat!\n\
+Has perdut!\n\
 Ha ha ha!\n\
-\n\
-That's what you get for\n\
-messin' with Koopa the\n\
-Quick.\n\
-Better luck next time!"))
+え s el que tさ  tractar de\n\
+desafiar en Koopa el\n\
+Rま pid!\n\
+Que tinguis mさ s sort\n\
+la propera vegada!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_042, 1, 4, 30, 200, _("\
-Caution! Narrow Bridge!\n\
-Cross slowly!\n\
 \n\
+Alerta! Pont Estret!\n\
+Creua lentament!\n\
 \n\
-You can jump to the edge\n\
-of the cliff and hang on,\n\
-and you can climb off the\n\
-edge if you move slowly.\n\
-When you want to let go,\n\
-either press [Z] or press\n\
-the Control Stick in the\n\
-direction of Mario's back.\n\
-To climb up, press Up on\n\
-the Control Stick. To\n\
-scurry up quickly, press\n\
-the [A] Button."))
+Pots saltar a la vora del\n\
+penya-segat i penjar-t'hi.\n\
+Tambさ  hi pots baixar\n\
+si et mous a poc a poc.\n\
+Quan vulguis deixar-te\n\
+anar prem [Z] or empeny la\n\
+Palanca de Control cap a\n\
+l'esquena d'en Mario.\n\
+Per escalar empeny amunt\n\
+la Palanca de Control, i\n\
+per fer-ho rま pidament\n\
+prem el botす  [A]."))
 
+// FET
 DEFINE_DIALOG(DIALOG_043, 1, 5, 30, 200, _("\
-If you jump and hold the\n\
-[A] Button, you can hang on\n\
-to some objects overhead.\n\
-It's the same as grabbing\n\
-a flying bird!"))
+Si saltes i mantens el\n\
+botす  [A] pots agafar-te a\n\
+alguns objectes sobre teu.\n\
+え s el mateix que agafar\n\
+una au a l'aire!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_044, 1, 5, 95, 200, _("\
-Whooo's there? Whooo\n\
-woke me up? It's still\n\
-daylight--I should be\n\
-sleeping!\n\
+Qui hi ha? Qui m'ha\n\
+despertat? Encara さ s\n\
+de dia, hauria d'estar\n\
+dormint!\n\
 \n\
-Hey, as long as I'm\n\
-awake, why not take a\n\
-short flight with me?\n\
-Press and hold [A] to grab\n\
-on. Release [A] to let go.\n\
-I'll take you wherever\n\
-you want to go, as long\n\
-as my wings hold out.\n\
-Watch my shadow, and\n\
-grab on."))
+Ei, mentre estigui\n\
+despert, per quこ  no fas\n\
+un petit vol amb mi?\n\
+Prem i mantingues [A]\n\
+per agafar-te-m'hi.\n\
+Deixa anar [A] per\n\
+aterrar. Et durさ  allま \n\
+on vulguis anar mentre\n\
+m'aguantin les plomes.\n\
+\n\
+\n\
+Observa la meva ombra\n\
+i agafa-t'hi!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_045, 1, 6, 95, 200, _("\
-Whew! I'm just about\n\
-flapped out. You should\n\
-lay off the pasta, Mario!\n\
-That's it for now. Press\n\
-[A] to let go. Okay,\n\
-bye byyyyyyeeee!"))
+Bufa! Estic extenuat.\n\
+Hauries d'afluixar la\n\
+pasta, Mario! Per ara\n\
+ja n'hi ha prou.\n\
+Prem [A] per aterrar.\n\
+Bさ , doncs, fins aviat!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_046, 1, 5, 30, 200, _("\
-You have to master three\n\
-important jumping\n\
-techniques.\n\
-First try the Triple Jump.\n\
+Has de dominar tres\n\
+tこ cniques de salt\n\
+importants.\n\
+Primer de tot el\n\
+Triple Salt.\n\
+Corre rま pid i salta\n\
+tres cops consecutius.\n\
+Si ho calcules bさ  el\n\
+tercer salt et farま \n\
+anar molt amunt.\n\
+Desprさ s, per les grans\n\
+distま ncies hi ha el Salt\n\
+Llarg. Corre, prem [Z] per\n\
+ajupir-te i llavors prem\n\
+[A] per saltar ben lluny.\n\
+I per fer el Salt de\n\
+Paret, prem [A] per saltar\n\
+a una paret i salta altre\n\
+cop just quan la toquis.\n\
 \n\
-Run fast, then jump three\n\
-times, one, two, three.\n\
-If you time the jumps\n\
-right, you'll hop, skip,\n\
-then jump really high.\n\
-Next, go for distance\n\
-with the Long Jump. Run,\n\
-press [Z] to crouch then [A]\n\
-to jump really far.\n\
-\n\
-To do the Wall Kick, press\n\
-[A] to jump at a wall, then\n\
-jump again when you hit\n\
-the wall.\n\
-\n\
-Got that? Triple Jump,\n\
-Long Jump, Wall Kick.\n\
-Practice, practice,\n\
-practice. You don't stand\n\
-a chance without them."))
+Ho tens? Triple Salt,\n\
+Salt Llarg i Salt de\n\
+Paret. Practica tot el\n\
+que puguis. No tens cap\n\
+possibilitat sense ells."))
 
+// FET
 DEFINE_DIALOG(DIALOG_047, 1, 2, 95, 200, _("\
-Hi! I'll prepare the\n\
-cannon for you!"))
+Hola! Prepararさ  el\n\
+canす  per a tu!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_048, 1, 4, 30, 200, _("\
-Snow Mountain Summit\n\
-Watch for slippery\n\
-conditions! Please enter\n\
-the cottage first."))
+Cim de la Muntanya\n\
+Nevada. Compte amb\n\
+Relliscar! Si us plau,\n\
+entreu primer a la cabana."))
 
+// FET
 DEFINE_DIALOG(DIALOG_049, 1, 5, 30, 200, _("\
-Remember that tricky Wall\n\
-Kick jump? It's a\n\
-technique you'll have to\n\
-master in order to reach\n\
-high places.\n\
-Use it to jump from wall\n\
-to wall. Press the\n\
-Control Stick in the\n\
-direction you want to\n\
-bounce to gain momentum.\n\
-Practice makes perfect!"))
+Recordes com fer el Salt\n\
+de Paret? え s una\n\
+tこ cnica que haurま s de\n\
+dominar per arribar\n\
+als llocs alts.\n\
+Utilitza-la per saltar de\n\
+paret a paret. Mou la\n\
+Palanca en la direcciす \n\
+que vulguis per rebotar i\n\
+guanyar acceleraciす .\n\
+La prま ctica fa el mestre!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_050, 1, 4, 30, 200, _("\
-Hold [Z] to crouch and\n\
-slide down a slope.\n\
-Or press [Z] while in the\n\
-air to Pound the Ground!\n\
-If you stop, crouch, then\n\
-jump, you'll do a\n\
-Backward Somersault!\n\
-Got that?\n\
-There's more. Crouch and\n\
-then jump to do a\n\
-Long Jump! Or crouch and\n\
-walk to...never mind."))
+Mantenint [Z] pots ajupir-te\n\
+i lliscar per pendents.\n\
+Prem [Z] sent enlaire\n\
+per fer un Salt Bomba!\n\
+Si t'atures, t'ajups i\n\
+saltes farま s un Salt\n\
+Mortal Enrere!\n\
+Ho agafes?\n\
+I encara mさ s. Ajupeix-te\n\
+i salta per fer un Salt\n\
+Llarg! O ajupeix-te i\n\
+camina per... Oblida-ho."))
 
+// FET
 DEFINE_DIALOG(DIALOG_051, 1, 6, 30, 200, _("\
-Climbing's easy! When you\n\
-jump at trees, poles or\n\
-pillars, you'll grab them\n\
-automatically. Press [A] to\n\
-jump off backward.\n\
+Enfilar-se さ s fま cil! Quan\n\
+saltis a arbres, pals o\n\
+pilars, t'hi agafarま s\n\
+al moment. Prem [A]\n\
+per saltar cap enrere.\n\
 \n\
-To rotate around the\n\
-object, press Right or\n\
-Left on the Control Stick.\n\
-When you reach the top,\n\
-press Up to do a\n\
-handstand!\n\
-Jump off from the\n\
-handstand for a high,\n\
-stylin' dismount."))
+Per girar-hi al voltant\n\
+gira la Palanca\n\
+a dreta o esquerra.\n\
+Quan arribis a dalt\n\
+de tot, mou-la amunt\n\
+per fer el pi!\n\
+\n\
+Salta des d'allま\n\
+i farま s un aterratge\n\
+amb molt d'estil."))
 
+// FET
 DEFINE_DIALOG(DIALOG_052, 1, 5, 30, 200, _("\
-Stop and press [Z] to\n\
-crouch, then press [A]\n\
-to do a high, Backward\n\
-Somersault!\n\
-\n\
-To perform a Side\n\
-Somersault, run, do a\n\
-sharp U-turn and jump.\n\
-You can catch lots of\n\
-air with both jumps."))
+Atura't i prem [Z]\n\
+per ajupir-te, llavors\n\
+prem [A] per fer un\n\
+Salt Mortal Enrere!\n\
+Per fer una Volta\n\
+Lateral, corre i\n\
+torna enrere i salta.\n\
+Pots anar molt lluny\n\
+amb aquests salts."))
 
+// FET
 DEFINE_DIALOG(DIALOG_053, 1, 5, 30, 200, _("\
-Sometimes, if you pass\n\
-through a coin ring or\n\
-find a secret point in a\n\
-course, a red number will\n\
-appear.\n\
-If you trigger five red\n\
-numbers, a secret Star\n\
-will show up."))
+De tant en tant, si\n\
+passes a travさ s d'un\n\
+anell de monedes o\n\
+trobes un lloc secret\n\
+al mす n, un nせ mero\n\
+de color roig hi\n\
+apareixerま .\n\
+Si arribes fins a\n\
+cinc hi sorgirま  una\n\
+Estrella Secreta."))
 
-DEFINE_DIALOG(DIALOG_054, 1, 5, 30, 200, _("\
-Welcome to the snow\n\
-slide! Hop on! To speed\n\
-up, press forward on the\n\
-Control Stick. To slow\n\
-down, pull back."))
+// FET
+DEFINE_DIALOG(DIALOG_054, 1, 6, 30, 200, _("\
+Benvingut al tobogan\n\
+nevat! Puja-hi! Per\n\
+accelerar empeny cap\n\
+endavant la palanca.\n\
+Per frenar, empeny-la\n\
+cap enrrere."))
 
+// FET
 DEFINE_DIALOG(DIALOG_055, 1, 4, 30, 200, _("\
-Hey-ey, Mario, buddy,\n\
-howzit goin'? Step right\n\
-up. You look like a fast\n\
-sleddin' kind of guy.\n\
-I know speed when I see\n\
-it, yes siree--I'm the\n\
-world champion sledder,\n\
-you know. Whaddya say?\n\
-How about a race?\n\
-Ready...\n\
-\n\
-//Go//// Don't Go"))
+Ei ei ei Mario! Com va\n\
+tot? Vine, acosta't.\n\
+え s evident que ets un\n\
+paio rま pid lliscant.\n\
+I ho sさ  nomさ s de\n\
+veure't, sし  senyor! I\n\
+jo soc el lし der mundial\n\
+d'aquest circuit on som. \n\
+Quこ  me'n dius, Mario,\n\
+fem una cursa?\n\
+Preparats... Llestos...\n\
+//Ja!//// Ara no"))
 
-DEFINE_DIALOG(DIALOG_056, 1, 6, 30, 200, _("\
-You brrrr-oke my record!\n\
-Unbelievable! I knew\n\
-that you were the coolest.\n\
-Now you've proven\n\
-that you're also the\n\
-fastest!\n\
-I can't award you a gold\n\
-medal, but here, take this\n\
-Star instead. You've\n\
-earned it!"))
+// FET
+DEFINE_DIALOG(DIALOG_056, 1, 5, 30, 200, _("\
+Has destrrrr-ossat\n\
+el meu rこ cord! Increみ ble!\n\
+Ja sabia jo que eres el\n\
+millor! I a mさ s ets tambさ \n\
+el mさ s rま pid!\n\
+No tinc cap medalla d'or\n\
+per donar-te, perた  tさ ,\n\
+agafa aquesta Estrella.\n\
+Te l'has guanyada ben\n\
+justament!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_057, 1, 4, 30, 200, _("\
-Egad! My baby!! Have you\n\
-seen my baby??? She's\n\
-the most precious baby in\n\
-the whole wide world.\n\
-(They say she has my\n\
-beak...) I just can't\n\
-remember where I left\n\
-her.\n\
-Let's see...I stopped\n\
-for herring and ice cubes,\n\
-then I...oohh! I just\n\
-don't know!"))
+Egad! Petita!! Has vist\n\
+la meva pingそ ineta??? え s\n\
+el nadす  mさ s preciす s\n\
+d'aquest planeta.\n\
+(Diuen que tさ  el meu\n\
+bec...) No puc\n\
+recordar on l'he\n\
+deixada.\n\
+Aviam... M'he aturat per\n\
+agafar arengades i\n\
+glaむ ons, i llavors... Oohh!\n\
+Simplement no ho recordo!"))
 
-DEFINE_DIALOG(DIALOG_058, 1, 4, 30, 200, _("\
-You found my precious,\n\
-precious baby! Where\n\
-have you been? How can\n\
-I ever thank you, Mario?\n\
-Oh, I do have this...\n\
-...Star. Here, take it\n\
-with my eternal\n\
-gratitude."))
+// FET
+DEFINE_DIALOG(DIALOG_058, 1, 5, 30, 200, _("\
+Has trobat la meva\n\
+bonica, preciosa\n\
+pingそ ineta! On has\n\
+estat? Com et podria\n\
+agrair aixた , Mario?\n\
+Oh, tinc aquesta...\n\
+...Estrella. Vine,\n\
+agafa-la i tingues la\n\
+meva eterna gratitud."))
 
-DEFINE_DIALOG(DIALOG_059, 1, 4, 30, 200, _("\
-That's not my baby! She\n\
-looks nothing like me!\n\
-Her parents must be\n\
-worried sick!"))
+// FET
+DEFINE_DIALOG(DIALOG_059, 1, 3, 30, 200, _("\
+Aquesta no さ s la meva\n\
+pingそ ineta! No\n\
+s'assembla en res a mi!\n\
+Els seus pares deuen\n\
+estar molt preocupats!"))
 
-DEFINE_DIALOG(DIALOG_060, 1, 4, 30, 200, _("\
-ATTENTION!\n\
-Read Before Diving In!\n\
+// FET
+DEFINE_DIALOG(DIALOG_060, 1, 5, 30, 200, _("\
+ALERTA!\n\
 \n\
+Llegeix aixた  abans\n\
+de capbussar-te!\n\
 \n\
-If you stay under the\n\
-water for too long, you'll\n\
-run out of oxygen.\n\
+Si et quedes sota\n\
+l'aigua molt de temps,\n\
+et quedarま s sense\n\
+oxigen.\n\
 \n\
-Return to the surface for\n\
-air or find an air bubble\n\
-or coins to breathe while\n\
-underwater.\n\
-Press [A] to swim. Hold [A]\n\
-to swim slow and steady.\n\
-Tap [A] with smooth timing\n\
-to gain speed.\n\
-Press Up on the\n\
-Control Stick and press [A]\n\
-to dive.\n\
-\n\
-Press Down on the Control\n\
-Stick and press [A] to\n\
-return to the surface.\n\
-\n\
-Hold Down and press [A]\n\
-while on the surface near\n\
-the edge of the water to\n\
-jump out."))
+Torna a la superfし cie per\n\
+respirar o busca una\n\
+bombolla d'aire o monedes\n\
+per conservar l'alこ \n\
+sota l'aigua.\n\
+Prem [A] per nedar.\n\
+Mantingues [A] per nedar\n\
+lent perた  estable. Apreta\n\
+[A] a intervals calculats\n\
+per guanyar velocitat.\n\
+Mou la Palanca amunt i\n\
+prem [A] per bussejar.\n\
+Mou la Palanca avall i\n\
+prem [A] per tornar a\n\
+la superfし cie.\n\
+Mantingues avall la\n\
+Palanca i prem [A] en la\n\
+superfし cie o voltants per\n\
+saltar de capa l'aigua."))
 
+// FET
 DEFINE_DIALOG(DIALOG_061, 1, 4, 30, 200, _("\
-BRRR! Frostbite Danger!\n\
-Do not swim here.\n\
-I'm serious.\n\
-/--The Penguin"))
+BRRR! Perill de\n\
+glaむ ar-se!\n\
+No nedis aquし . De debた .\n\
+/--El Pingそ し "))
 
-DEFINE_DIALOG(DIALOG_062, 1, 3, 30, 200, _("\
-Hidden inside the green\n\
-block is the amazing\n\
-Metal Cap.\n\
-Wearing it, you won't\n\
-catch fire or be hurt\n\
-by enemy attacks.\n\
-You don't even have to\n\
-breathe while wearing it.\n\
+// FET
+DEFINE_DIALOG(DIALOG_062, 1, 4, 30, 200, _("\
+Amagat dins d'aquest\n\
+bloc verd hi ha\n\
+l'increみ ble Barret\n\
+Metま l&lic.\n\
+Duent-lo no et\n\
+cremarま s ni et farま s\n\
+mal amb els enemics.\n\
 \n\
-The only problem:\n"
-YOU_CANT_SWIM_IN_IT))
+Tampoc farま  falta que\n\
+respiris mentre la\n\
+tinguis posada.\n\
+\n\
+\n\
+L'せ nic problema?\n\
+Que no podrま s nedar."))
 
+// FET
 DEFINE_DIALOG(DIALOG_063, 1, 5, 30, 200, _("\
-The Vanish Cap is inside\n\
-the blue block. Mr. I.\n\
-will be surprised, since\n\
-you'll be invisible when\n\
-you wear it!\n\
-Even the Big Boo will be\n\
-fooled--and you can walk\n\
-through secret walls, too."))
+El Barret Esvaみ t さ s dins\n\
+el bloc blau. Fins i tot a\n\
+mi em sorprこ n, perquこ \n\
+ets invisible mentre\n\
+el portes!\n\
+Fins i tot al Gran Boo\n\
+se'l pot enganyar.\n\
+I, a mさ s, tambさ  pots\n\
+travessar parets secretes."))
 
+// FET
 DEFINE_DIALOG(DIALOG_064, 1, 5, 30, 200, _("\
-When you put on the Wing\n\
-Cap that comes from a\n\
-red block, do the Triple\n\
-Jump to soar high into\n\
-the sky.\n\
-Use the Control Stick to\n\
-guide Mario. Pull back to\n\
-to fly up, press forward\n\
-to nose down, and press [Z]\n\
-to land."))
+Quan agafis el Barret\n\
+Alat, amagat al bloc\n\
+roig, fes un Triple Salt\n\
+per volar pel cel.\n\
+\n\
+Utilitza la Palanca de\n\
+Control per guiar en Mario.\n\
+\n\
+Cap enrere volarま s alt,\n\
+cap endavant farま s un\n\
+picat i prem [Z]\n\
+per aterrar."))
 
+// FET
 DEFINE_DIALOG(DIALOG_065, 1, 6, 30, 200, _("\
-Swimming Lessons!\n\
-Tap [A] to do the breast\n\
-stroke. If you time the\n\
-taps right, you'll swim\n\
-fast.\n\
+Lliむ ons de Nataciす !\n\
 \n\
-Press and hold [A] to do a\n\
-slow, steady flutter kick.\n\
-Press Up on the Control\n\
-Stick to dive, and pull\n\
-back on the stick to head\n\
-for the surface.\n\
-To jump out of the water,\n\
-hold Down on the Control\n\
-Stick, then press [A].\n\
-Easy as pie, right?\n\
+Prem [A] per nedar de\n\
+braむ a. Si calcules bさ \n\
+els intervals nedarま s\n\
+mさ s rま pid.\n\
+Prem i mantigues [A] per\n\
+picar de peus mさ s lent,\n\
+perた  estable. Mou la\n\
+Palanca amunt per bussejar\n\
+i mou-la avall per pujar\n\
+cap a la superfし cie.\n\
+Per sortir de l'aigua\n\
+mantingues la Palanca\n\
+avall i llavors prem [A].\n\
 \n\
+え s bufar i fer\n\
+ampolles, oi?\n\
+Perた  recorda:\n\
 \n\
-But remember:\n\
-Mario can't breathe under\n\
-the water! Return to the\n\
-surface for air when the\n\
-Power Meter runs low.\n\
-\n\
-And one last thing: You\n\
-can't open doors that\n\
-are underwater."))
+En Mario no pot respirar\n\
+sota l'aigua! Torna a la\n\
+superfし cie per agafar aire\n\
+quan tinguis poca salut.\n\
+I una darrera cosa:\n\
+No pots obrir portes que\n\
+estiguin sota l'aigua."))
 
+// FET
 DEFINE_DIALOG(DIALOG_066, 1, 5, 30, 200, _("\
-Mario, it's Peach!\n\
-Please be careful! Bowser\n\
-is so wicked! He will try\n\
-to burn you with his\n\
-horrible flame breath.\n\
-Run around behind and\n\
-grab him by the tail with\n\
-the [B] Button. Once you\n\
-grab hold, swing him\n\
-around in great circles.\n\
-Rotate the Control Stick\n\
-to go faster and faster.\n\
-The faster you swing him,\n\
-the farther he'll fly.\n\
+Mario, soc la Peach!\n\
+Si us plau, ves amb\n\
+compte! En Bowser さ s molt\n\
+malvat! Et vol cremar amb\n\
+el seu horrible alこ .\n\
+Corre fins darrere seu\n\
+i agafa'l per la cua\n\
+amb el botす  [B]. Un cop\n\
+agafat sacseja'l en\n\
+cercles.\n\
+Rota la Palanca per\n\
+girar mさ s i mさ s rま pid.\n\
+Com mさ s rま pid el\n\
+sacsegis mさ s lluny\n\
+l'enviarま s.\n\
+Utilitza els botons [C]\n\
+per mirar arreu, Mario.\n\
+Has de llenむ ar en Bowser\n\
+contra una de les bombes\n\
+dels quatre cantons.\n\
 \n\
-Use the [C] Buttons to look\n\
-around, Mario. You have\n\
-to throw Bowser into one\n\
-of the bombs in the four\n\
-corners.\n\
-Aim well, then press [B]\n\
-again to launch Bowser.\n\
-Good luck, Mario! Our\n\
-fate is in your hands."))
+Apunta bさ  i llavors\n\
+prem [B] per llenむ ar\n\
+en Bowser.\n\
+\n\
+\n\
+Bona sort, Mario! El\n\
+nostre destし  さ s a les\n\
+teves mans."))
 
+// FET
 DEFINE_DIALOG(DIALOG_067, 1, 5, 30, 200, _("\
-Tough luck, Mario!\n\
-Princess Toadstool isn't\n\
-here...Gwa ha ha!! Go\n\
-ahead--just try to grab\n\
-me by the tail!\n\
-You'll never be able to\n\
-swing ME around! A wimp\n\
-like you won't throw me\n\
-out of here! Never! Ha!"))
+Mala sort, Mario! La\n\
+Princesa Peach no さ s\n\
+aquし ... Ha ha ha!!\n\
+Vinga, prova a\n\
+agafar-me per la cua!\n\
+No serま s capaむ  de\n\
+moure'm NI UNA MICA! Un\n\
+nyicris com tu no tさ  prou\n\
+forむ a per llenむ ar-me!\n\
+Mai de la vida! Ha!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_068, 1, 5, 30, 200, _("\
-It's Lethal Lava Land!\n\
-If you catch fire or fall\n\
-into a pool of flames,\n\
-you'll be hopping mad, but\n\
-don't lose your cool.\n\
-You can still control\n\
-Mario--just try to keep\n\
-calm!"))
+Aquesta さ s la Terra\n\
+de Lava! Si et cremes o\n\
+caus a la lava no pararま s\n\
+quiet! Perた  no perdis\n\
+pas els nervis.\n\
+Encara podrま s controlar\n\
+en Mario, nomさ s has de\n\
+tractar de mantenir\n\
+la calma!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_069, 1, 6, 30, 200, _("\
-Sometimes you'll bump into\n\
-invisible walls at the\n\
-edges of the painting\n\
-worlds. If you hit a wall\n\
-while flying, you'll bounce\n\
-back."))
+Pot ser que et topis amb\n\
+parets invisibles als\n\
+lし mits dels mons dels\n\
+quadres. Si xoques\n\
+amb un mur mentre voles,\n\
+caurま s cap avall."))
 
+// FET
 DEFINE_DIALOG(DIALOG_070, 1, 5, 30, 200, _("\
-You can return to the\n\
-castle's main hall at any\n\
-time from the painting\n\
-worlds where the enemies\n\
-live.\n\
-Just stop, stand still,\n\
-press Start to pause the\n\
-game, then select\n\
-『Exit Course.』\n\
+Pots tornar al\n\
+vestし bul del castell\n\
+en qualsevol moment\n\
+des dels mons dels\n\
+quadres.\n\
+Nomさ s atura't, queda't\n\
+quiet, prem Start per\n\
+pausar el joc i tria\n\
+『Surt del mす n』.\n\
 \n\
-You don't have to collect\n\
-all Power Stars in one\n\
-course before going on to\n\
-the next.\n\
+No さ s necessari agafar\n\
+totes les Estrelles de\n\
+Poder d'un mす n per\n\
+poder anar al segそ ent.\n\
 \n\
-Return later, when you're\n\
-more experienced, to pick\n\
-up difficult ones.\n\
+Torna-hi mさ s tard\n\
+quan estiguis mさ s\n\
+preparat per als\n\
+mons mさ s difし cils.\n\
 \n\
+Quan trobis una\n\
+Estrella, a la pantalla\n\
+d'inici del mす n veurま s una\n\
+pista per a la segそ ent.\n\
 \n\
-Whenever you find a Star,\n\
-a hint for finding the\n\
-next one will appear on\n\
-the course's start screen.\n\
-\n\
-You can, however, collect\n\
-any of the remaining\n\
-Stars next. You don't\n\
-have to recover the one\n\
-described by the hint."))
+Igualment, pots agafar\n\
+qualsevol de les Estrelles\n\
+que falten. No cal anar\n\
+a per la que indica\n\
+la pista."))
 
+// FET
 DEFINE_DIALOG(DIALOG_071, 1, 3, 30, 200, _("\
-Danger Ahead!\n\
-Beware of the strange\n\
-cloud! Don't inhale!\n\
-If you feel faint, run for\n\
-higher ground and fresh\n\
-air!\n\
-Circle: Shelter\n\
-Arrow: Entrance-Exit"))
+Perill Imminent!\n\
+Compte amb els nせ vols\n\
+estranys! No els inhalis!\n\
+Si et trobes feble puja\n\
+a un terreny elevat\n\
+i respira aire fresc!\n\
+Cercle: Refugi\n\
+\n\
+Fletxa: Entrada-Sortida"))
 
+// FET
 DEFINE_DIALOG(DIALOG_072, 1, 5, 30, 200, _("\
-High winds ahead!\n\
-Pull your Cap down tight.\n\
-If it blows off, you'll\n\
-have to find it on this\n\
-mountain."))
+Zona de forts vents!\n\
+Vigila't el Barret.\n\
+Si se't vola, l'haurま s\n\
+de trobar en aquesta\n\
+muntanya.."))
 
+// FET
 DEFINE_DIALOG(DIALOG_073, 1, 4, 95, 200, _("\
-Aarrgh! Ahoy, matey. I\n\
-have sunken treasure,\n\
-here, I do.\n\
+Arrr! Endavant,\n\
+xitxarel&lo! Tenc un\n\
+tresor enterrat aquし ,\n\
+mira per on!\n\
+Veus aquest cofres? Idた ,\n\
+si vols es doblers,\n\
+haurま s d'endevinar en\n\
+quin ordre s'han d'obrir.\n\
+Jo no faig comptes de\n\
+dir-t'ho mai, perた , no\n\
+som beneit.\n\
 \n\
-But to pluck the plunder,\n\
-you must open the\n\
-Treasure Chests in the\n\
-right order.\n\
-What order is that,\n\
-ye say?\n\
+Ja t'ho farま s, si さ s\n\
+que els vols!\n\
 \n\
-\n\
-I'll never tell!\n\
-\n\
-//--The Cap'n"))
+//--Es Capitま "))
 
-DEFINE_DIALOG(DIALOG_074, 1, 5, 30, 200, _("\
-You can grab on to the\n\
-edge of a cliff or ledge\n\
-with your fingertips and\n\
-hang down from it.\n\
-\n\
-To drop from the edge,\n\
-either press the Control\n\
-Stick in the direction of\n\
-Mario's back or press the\n\
-[Z] Button.\n\
-To get up onto the ledge,\n\
-either press Up on the\n\
-Control Stick or press [A]\n\
-as soon as you grab the\n\
-ledge to climb up quickly."))
+// FET
+DEFINE_DIALOG(DIALOG_074, 1, 4, 30, 200, _("\
+Pots agafar-te a les\n\
+vores d'un penya-segat\n\
+o una corninsa amb les\n\
+mans i penjar-t'hi.\n\
+Per deixar-te anar mou\n\
+la Palanca en la direcciす \n\
+de l'esquena d'en Mario\n\
+o prem [Z].\n\
+Per pujar mou la Palanca\n\
+amunt o prem [A] just\n\
+a l'agafar-t'hi per\n\
+pujar-hi de pressa."))
 
+// FET
 DEFINE_DIALOG(DIALOG_075, 1, 5, 30, 200, _("\
-Mario!! My castle is in\n\
-great peril. I know that\n\
-Bowser is the cause...and\n\
-I know that only you can\n\
-stop him!\n\
-The doors in the castle\n\
-that have been sealed by\n\
-Bowser can be opened only\n\
-with Star Power.\n\
+Mario!! El castell es\n\
+troba en gran perill. Sさ \n\
+que en Bowser n'さ s el\n\
+culpable... I tambさ  que\n\
+nomさ s tu el podrま s aturar!\n\
+Les portes del castell\n\
+han estat segellades per\n\
+en Bowser i せ nicament es\n\
+poden obrir amb les\n\
+Estrelles de Poder.\n\
+Perた  hi ha passadissos\n\
+secrets al castell,\n\
+camins que en Bowser\n\
+segur no ha trobat.\n\
 \n\
-But there are secret\n\
-paths in the castle,\n\
-paths that Bowser hasn't\n\
-found.\n\
+Un d'aquests es troba\n\
+en aquesta sala i tさ  una\n\
+de les Estrelles Secretes!\n\
+Troba-la, Mario! Et serま \n\
+d'せ s en la teva aventura.\n\
 \n\
-One of those paths is in\n\
-this room, and it holds\n\
-one of the castle's Secret\n\
-Stars!\n\
+Si us plau, Mario,\n\
+ens has d'ajudar!\n\
 \n\
-Find that Secret Star,\n\
-Mario! It will help you\n\
-on your quest. Please,\n\
-Mario, you have to\n\
-help us!\n\
-Retrieve all of the\n\
-Power Stars in the castle\n\
-and free us from this\n\
-awful prison!\n\
-Please!"))
+\n\
+Recupera totes les\n\
+Estrelles del castell\n\
+i allibera'ns d'aquesta\n\
+horrible presす !\n\
+T'ho demano per favor!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_076, 1, 6, 30, 200, _("\
-Thanks to the power of\n\
-the Stars, life is\n\
-returning to the castle.\n\
-Please, Mario, you have\n\
-to give Bowser the boot!\n\
-\n\
-Here, let me tell you a\n\
-little something about the\n\
-castle. In the room with\n\
-the mirrors, look carefully\n\
-for anything that's not\n\
-reflected in the mirror.\n\
-And when you go to the\n\
-water town, you can flood\n\
-it with a high jump into\n\
-the painting. Oh, by the\n\
-way, look what I found!"))
+Grま cies al poder de\n\
+les Estrelles, la vida\n\
+torna a ser normal al\n\
+castell. Si us plau,\n\
+Mario, dona-li una lliむ す \n\
+a en Bowser!\n\
+Escolta, deixa que\n\
+t'expliqui una cosa sobre\n\
+el castell. A la sala dels\n\
+miralls, busca amb cura\n\
+quelcom que no es\n\
+reflecteixi al mirall.\n\
+I quan vagis a la\n\
+Vila Xopa-Seca, inunda-la\n\
+amb un salt alt dins\n\
+la pintura. Oh, per cert,\n\
+mira quこ  he trobat!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_077, 1, 2, 150, 200, _("\
-It is decreed that one\n\
-shall pound the pillars."))
+Ha estat decretat que\n\
+cal colpejar els pilars."))
 
+// FET
 DEFINE_DIALOG(DIALOG_078, 1, 5, 30, 200, _("\
-Break open the Blue Coin\n\
-Block by Pounding the\n\
-Ground with the [Z] Button.\n\
-One Blue Coin is worth\n\
-five Yellow Coins.\n\
-But you have to hurry!\n\
-The coins will disappear\n\
-if you're not quick to\n\
-collect them! Too bad."))
+Trenca el bloc de les\n\
+Monedes Blaves fent-hi\n\
+un Salt Bomba amb el\n\
+botす  [Z]. Una Moneda Blava\n\
+val cinc Monedes Grogues.\n\
+Perた  fes-ne via!\n\
+Les monedes desapareixen\n\
+si no les agafes\n\
+a temps!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_079, 1, 4, 30, 200, _("\
-Owwwuu! Let me go!\n\
-Uukee-kee! I was only\n\
-teasing! Can't you take\n\
-a joke?\n\
-I'll tell you what, let's\n\
-trade. If you let me go,\n\
-I'll give you something\n\
-really good.\n\
-So, how about it?\n\
+Ouuu! Deixa'm anar!\n\
+Uukee-kee! Nomさ s em\n\
+burlava de tu! No veus\n\
+que era una broma?\n\
+Escolta'm, fem una cosa.\n\
+Si em deixes anar,\n\
+et donarさ  quelcom molt\n\
+i molt bo.\n\
+Llavors, quこ  me'n dius?\n\
 \n\
-//Free him/ Hold on"))
+//Deixar-lo/ Ara no"))
 
+// FET
 DEFINE_DIALOG(DIALOG_080, 1, 1, 30, 200, _("\
-Eeeh hee hee hee!"))
+Eeeh he he he!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_081, 1, 4, 30, 200, _("\
-The mystery is of Wet\n\
-or Dry.\n\
-And where does the\n\
-solution lie?\n\
-The city welcomes visitors\n\
-with the depth they bring\n\
-as they enter."))
+El misteri さ s de Moll\n\
+o Sec.\n\
+\n\
+On radica la soluciす ?\n\
+La vila acull els\n\
+visitants amb la\n\
+profunditat que aporten\n\
+quan hi entren."))
 
+// FET
 DEFINE_DIALOG(DIALOG_082, 1, 4, 30, 200, _("\
-Hold on to your hat! If\n\
-you lose it, you'll be\n\
-injured easily.\n\
+Agafa't a la gorra! Si la\n\
+perds, et farま s mal\n\
+fま cilment.\n\
 \n\
-If you do lose your Cap,\n\
-you'll have to find it in\n\
-the course where you\n\
-lost it.\n\
-Oh, boy, it's not looking\n\
-good for Peach. She's\n\
-still trapped somewhere\n\
-inside the walls.\n\
-Please, Mario, you have\n\
-to help her! Did you know\n\
-that there are enemy\n\
-worlds inside the walls?\n\
-Yup. It's true. Bowser's\n\
-troops are there, too.\n\
-Oh, here, take this. I've\n\
-been keeping it for you."))
+Si perds la Gorra,\n\
+l'haurま s de buscar en\n\
+aquell mす n on\n\
+la vas perdre.\n\
+Ai, tu, no pinta bさ \n\
+per la Peach. Segueix\n\
+atrapada en algun lloc\n\
+dins el castell.\n\
+Si us plau, Mario,\n\
+l'has d'ajudar! Saps\n\
+que hi ha mons enemics\n\
+dins els quadres?\n\
+I tant. Les tropes d'en\n\
+Bowser tambさ  sす n aquし .\n\
+Ah, mira, agafa aixた .\n\
+T'ho he estat guardant."))
 
+// FET
 DEFINE_DIALOG(DIALOG_083, 1, 6, 30, 200, _("\
-There's something strange\n\
-about that clock. As you\n\
-jump inside, watch the\n\
-position of the big hand.\n\
-Oh, look what I found!\n\
-Here, Mario, catch!"))
+Alguna cosa estranya li\n\
+passa a aquest rellotge.\n\
+Quan hi entris, observa la\n\
+posiciす  de la busca gran.\n\
+Ei, i mira quこ  he trobat!\n\
+Tさ , Mario, agafa-la!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_084, 1, 3, 30, 200, _("\
-Yeeoww! Unhand me,\n\
-brute! I'm late, so late,\n\
-I must make haste!\n\
-This shiny thing? Mine!\n\
-It's mine. Finders,\n\
-keepers, losers...\n\
-Late, late, late...\n\
-Ouch! Take it then! A\n\
-gift from Bowser, it was.\n\
-Now let me be! I have a\n\
-date! I cannot be late\n\
-for tea!"))
+Iauu! Deixa'm, brこ tol!\n\
+Faig tard, molt tard,\n\
+he d'anar com una bala!\n\
+Aixた  que brilla? Meu!\n\
+え s meu. Buscadors,\n\
+cuidadors, perdedors...\n\
+Tard, tard, tard...\n\
+Au! Queda-t'ho doncs!\n\
+Era un regal d'en Bowser.\n\
+Ara deixa'm! Tinc una\n\
+cita! No puc fer\n\
+tard al te!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_085, 1, 5, 30, 200, _("\
-You don't stand a ghost\n\
-of a chance in this house.\n\
-If you walk out of here,\n\
-you deserve...\n\
-...a Ghoul Medal..."))
+No tindrま s fantasmagた rica\n\
+sort dins aquesta casa. \n\
+Si en surts d'una peむ a \n\
+mereixerま s...\n\
+Una Fantasmedalla..."))
 
+// FET
 DEFINE_DIALOG(DIALOG_086, 1, 3, 30, 200, _("\
-Running around in circles\n\
-makes some bad guys roll\n\
-their eyes."))
+Cす rrer en cercles fa a\n\
+alguns dolents rodar\n\
+els ulls."))
 
+// FET
 DEFINE_DIALOG(DIALOG_087, 1, 4, 30, 200, _("\
-Santa Claus isn't the only\n\
-one who can go down a\n\
-chimney! Come on in!\n\
-/--Cabin Proprietor"))
+El Pare Noel no さ s l'せ nic\n\
+que pot baixar per una\n\
+xemeneia! Entra-hi!\n\
+--Propietari de la Cabana"))
 
+// FET
 DEFINE_DIALOG(DIALOG_088, 1, 5, 30, 200, _("\
-Work Elevator\n\
-For those who get off\n\
-here: Grab the pole to the\n\
-left and slide carefully\n\
-down."))
+Plataforma Elevadora\n\
+Si voleu baixar d'aquし :\n\
+agafeu el pal de\n\
+l'esquerra i descendiu\n\
+amb precauciす ."))
 
+// FET
 DEFINE_DIALOG(DIALOG_089, 1, 5, 95, 200, _("\
-Both ways fraught with\n\
-danger! Watch your feet!\n\
-Those who can't do the\n\
-Long Jump, tsk, tsk. Make\n\
-your way to the right.\n\
-Right: Work Elevator\n\
-/// Cloudy Maze\n\
-Left: Black Hole\n\
-///Underground Lake\n\
+Les dues rutes desborden\n\
+perill! Mira per on vas!\n\
+Els que no puguin fer el\n\
+salt de llargada millor\n\
+que vagin cap a la dreta.\n\
+Dreta: Elevador\n\
+/// Laberint Boirす s\n\
+Esquerra: Forat Negre\n\
+/////Llac Subterrani\n\
 \n\
-Red Circle: Elevator 2\n\
-//// Underground Lake\n\
-Arrow: You are here"))
+Cercle roig: Elevador 2\n\
+///// Llac Subterrani\n\
+Fletxa: Ets aquし "))
 
+// FET
 DEFINE_DIALOG(DIALOG_090, 1, 6, 30, 200, _("\
-Bwa ha ha ha!\n\
-You've stepped right into\n\
-my trap, just as I knew\n\
-you would! I warn you,\n\
-『Friend,』 watch your\n\
-step!"))
+Bua ha ha ha!\n\
+Has caigut directe a la\n\
+meva trampa, com havia\n\
+previst que faries!\n\
+T'aviso, amic, ves\n\
+amb peus de plom!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_091, 2, 2, 30, 200, _("\
-Danger!\n\
-Strong Gusts!\n\
-But the wind makes a\n\
-comfy ride."))
+Perill!\n\
+Fortes ratxes!\n\
+El vent fa el\n\
+viatge cた mode, perた ."))
 
+// FET
 DEFINE_DIALOG(DIALOG_092, 1, 5, 30, 200, _("\
-Pestering me again, are\n\
-you, Mario? Can't you see\n\
-that I'm having a merry\n\
-little time, making\n\
-mischief with my minions?\n\
-Now, return those Stars!\n\
-My troops in the walls\n\
-need them! Bwa ha ha!"))
-
-DEFINE_DIALOG(DIALOG_093, 1, 5, 30, 200, _("\
-Mario! You again! Well\n\
-that's just fine--I've\n\
-been looking for something\n\
-to fry with my fire\n\
-breath!\n\
-Your Star Power is\n\
-useless against me!\n\
-Your friends are all\n\
-trapped within the\n\
-walls...\n\
-And you'll never see the\n\
-Princess again!\n\
-Bwa ha ha ha!"))
-
-DEFINE_DIALOG(DIALOG_094, 1, 4, 30, 200, _("\
-Get a good run up the\n\
-slope! Do you remember\n\
-the Long Jump? Run, press\n\
-[Z], then jump!"))
-
-DEFINE_DIALOG(DIALOG_095, 1, 4, 30, 200, _("\
-To read a sign, stand in\n\
-front of it and press [B],\n\
-like you did just now.\n\
+Ja tornes a molestar,\n\
+Mario? No veus que\n\
+m'ho passo la mar de bさ \n\
+fent malifetes amb els\n\
+meus sequaむ os?\n\
+Ara torna'm les Estrelles!\n\
+Les meves tropes al\n\
+castell les necessiten!\n\
 \n\
-When you want to talk to\n\
-a Koopa Troopa or other\n\
-animal, stand right in\n\
-front of it.\n\
-Please recover the Stars\n\
-that were stolen by\n\
-Bowser in this course."))
+Bua ha ha!"))
 
+// FET
+DEFINE_DIALOG(DIALOG_093, 1, 5, 30, 200, _("\
+Mario! Tu de nou!\n\
+Bさ , no passa res,\n\
+estava buscant coses\n\
+per rostir amb el meu\n\
+alこ  de foc!\n\
+El teu Poder d'Estrella\n\
+さ s inせ til contra mi!\n\
+Tots els teus amics\n\
+estan atrapats\n\
+dins el castell...\n\
+\n\
+I no veurま s mai mさ s\n\
+la Princesa!\n\
+Bua ha ha ha!"))
+
+// FET
+DEFINE_DIALOG(DIALOG_094, 1, 4, 30, 200, _("\
+Puja el pendent a tota\n\
+velocitat! Recordes\n\
+el Salt Llarg? Corre,\n\
+prem [Z] i salta!"))
+
+// FET
+DEFINE_DIALOG(DIALOG_095, 1, 4, 30, 200, _("\
+Per llegir un rこ tol,\n\
+atura't al seu davant\n\
+i prem [B], tal com has \n\
+fet ara mateix.\n\
+Tambさ  et servirま  per\n\
+quan vulguis parlar\n\
+amb un Koopa Troopa o\n\
+un altre animal.\n\
+Si us plau, recupera\n\
+les Estrelles robades\n\
+per en Bowser\n\
+d'aquest mす n."))
+
+// FET
 DEFINE_DIALOG(DIALOG_096, 1, 4, 30, 200, _("\
-The path is narrow here.\n\
-Easy does it! No one is\n\
-allowed on top of the\n\
-mountain!\n\
-And if you know what's\n\
-good for you, you won't\n\
-wake anyone who's\n\
-sleeping!\n\
-Move slowly,\n\
-tread lightly."))
+El camし  さ s mさ s estret\n\
+aquし . Compte! Ningせ  tさ \n\
+permし s per arribar al\n\
+cim de la muntanya!\n\
+I si saps el que et\n\
+convさ  no despertarま s\n\
+a ningせ  que dormi!\n\
+\n\
+\n\
+Gat escaldat,\n\
+d'aigua freda fuig."))
 
+// FET
 DEFINE_DIALOG(DIALOG_097, 1, 5, 30, 200, _("\
-Don't be a pushover!\n\
-If anyone tries to shove\n\
-you around, push back!\n\
-It's one-on-one, with a\n\
-fiery finish for the loser!"))
+No siguis beneit! Si algせ \n\
+t'intenta empこ nyer,\n\
+torna-t'hi! へ s un un\n\
+contra un, amb un ardent\n\
+final pel perdedor!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_098, 1, 2, 95, 200, _("\
-Come on in here...\n\
-...heh, heh, heh..."))
+Vine aquし ...\n\
+...he he he..."))
 
-// unused
+// unused // FET
 DEFINE_DIALOG(DIALOG_099, 1, 5, 95, 200, _("\
 Eh he he...\n\
-You're mine, now, hee hee!\n\
-I'll pass right through\n\
-this wall. Can you do\n\
-that? Heh, heh, heh!"))
+Ara ets meu, hee hee!\n\
+Travessarさ  directament\n\
+la paret. Tu tambさ  pots\n\
+fer-ho? He, he, he!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_100, 1, 3, 95, 200, _("\
 Ukkiki...Wakkiki...kee kee!\n\
-Ha! I snagged it!\n\
-It's mine! Heeheeheeee!"))
+Ha! L'he collit de terra!\n\
+え s meva! Heeheeheeee!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_101, 1, 3, 95, 200, _("\
-Ackk! Let...go...\n\
-You're...choking...me...\n\
-Cough...I've been framed!\n\
-This Cap? Oh, all right,\n\
-take it. It's a cool Cap,\n\
-but I'll give it back.\n\
-I think it looks better on\n\
-me than it does on you,\n\
-though! Eeeee! Kee keee!"))
+Ackk! Deixa... anar...\n\
+M'estま s... fent... mal...\n\
+Tsut... Ja m'has agafat!\n\
+La gorra? Oh, d'acord,\n\
+agafa-la. え s ben genial,\n\
+perた  te la tornarさ .\n\
+Tot i que a mi em quedi\n\
+millor que a tu!\n\
+Hum! Eeeee! Hee heee!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_102, 1, 5, 30, 200, _("\
-Pssst! The Boos are super\n\
-shy. If you look them\n\
-in the eyes, they fade\n\
-away, but if you turn\n\
-your back, they reappear.\n\
-It's no use trying to hit\n\
-them when they're fading\n\
-away. Instead, sneak up\n\
-behind them and punch."))
+Pssst! Els Boos son molt\n\
+tし mids. Si els mires als\n\
+ulls desapareixen, perた \n\
+si els deixes de mirar\n\
+tornen a aparこ ixer.\n\
+え s inせ til mirar de\n\
+fer-los mal quan\n\
+s'esvaeixen. El millor\n\
+さ s colpejar-los per\n\
+darrere silenciosament."))
 
+// FET
 DEFINE_DIALOG(DIALOG_103, 1, 4, 95, 200, _("\
-Upon four towers\n\
-one must alight...\n\
-Then at the peak\n\
-shall shine the light..."))
+Sobre les quatre torres\n\
+algせ  s'hi estarま ...\n\
+Llavors al cim\n\
+la llum brillarま ..."))
 
-DEFINE_DIALOG(DIALOG_104, 1, 5, 30, 200, _("\
-The shadowy star in front\n\
-of you is a 『Star\n\
-Marker.』 When you collect\n\
-all 8 Red Coins, the Star\n\
-will appear here."))
+// FET
+DEFINE_DIALOG(DIALOG_104, 1, 6, 30, 200, _("\
+L'estrella translせ cida\n\
+que veus aquし  さ s un\n\
+『Marcador d'Estrella.』\n\
+Quan agafis totes les 8\n\
+Monedes Roges, l'Estrella\n\
+apareixerま  aquし ."))
 
+// FET
 DEFINE_DIALOG(DIALOG_105, 1, 3, 95, 200, _("\
-Ready for blastoff! Come\n\
-on, hop into the cannon!\n\
+Preparat per la igniciす !\n\
+Salta dins el canす !\n\
 \n\
-You can reach the Star on\n\
-the floating island by\n\
-using the four cannons.\n\
-Use the Control Stick to\n\
-aim, then press [A] to fire.\n\
-\n\
-If you're handy, you can\n\
-grab on to trees or poles\n\
-to land."))
+Pots arribar a l'Estrella\n\
+de l'illa flotant emprant\n\
+aquests quatre canons.\n\
+Mou la Palanca per\n\
+apuntar i prem [A]\n\
+per disparar.\n\
+Amb una mica de sort et\n\
+podrま s agafar a arbres\n\
+o pals per aterrar."))
 
+// FET
 DEFINE_DIALOG(DIALOG_106, 1, 2, 95, 200, _("\
-Ready for blastoff! Come\n\
-on, hop into the cannon!"))
+Preparat per l'igniciす !\n\
+Salta dins el canす !"))
 
+// FET
 DEFINE_DIALOG(DIALOG_107, 1, 3, 95, 200, _("\
-Ghosts...\n\
-...don't...\n\
-...DIE!\n\
-Heh, heh, heh!\n\
-Can you get out of here...\n\
-...alive?"))
+Els fantasmes...\n\
+... no...\n\
+... MOREN!\n\
+He, he, he!\n\
+Podrま s sortir d'aquし ...\n\
+... amb vida?"))
 
-DEFINE_DIALOG(DIALOG_108, 1, 2, 95, 200, _("\
-Boooooo-m! Here comes\n\
-the master of mischief,\n\
-the tower of terror,\n\
-the Big Boo!\n\
-Ka ha ha ha..."))
+// FET
+DEFINE_DIALOG(DIALOG_108, 1, 3, 95, 200, _("\
+Boooooo! Ja soc aquし ,\n\
+ja ha arribat el mestre\n\
+de les malifetes,\n\
+el pilar del terror,\n\
+en Gran Boo!\n\
+Ha ha ha ha..."))
 
+// FET
 DEFINE_DIALOG(DIALOG_109, 1, 4, 95, 200, _("\
-Ooooo Nooooo!\n\
-Talk about out-of-body\n\
-experiences--my body\n\
-has melted away!\n\
-Have you run in to any\n\
-headhunters lately??\n\
-I could sure use a new\n\
-body!\n\
-Brrr! My face might\n\
-freeze like this!"))
+Oooooh, no!\n\
+Parlant d'experiこ ncies\n\
+extracorporals, el meu\n\
+cos ha desaparegut!\n\
+Has fet de caむ atalents\n\
+darrerament??\n\
+La veritat さ s que em\n\
+va genial un nou cos!\n\
+\n\
+Brrr! Se'm glaむ arま \n\
+la cara al final!"))
 
-DEFINE_DIALOG(DIALOG_110, 1, 5, 95, 200, _("\
-I need a good head on my\n\
-shoulders. Do you know of\n\
-anybody in need of a good\n\
-body? Please! I'll follow\n\
-you if you do!"))
+// FET
+DEFINE_DIALOG(DIALOG_110, 1, 6, 95, 200, _("\
+Necessito un bon cap a\n\
+les espatlles. Saps\n\
+d'algせ  que necessiti un\n\
+bon cos? Si us plau!\n\
+Et seguirさ  si me\n\
+l'aconsegueixes!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_111, 1, 4, 95, 200, _("\
-Perfect! What a great\n\
-new body! Here--this is a\n\
-present for you. It's sure\n\
-to warm you up."))
+Perfecte! Quin nou cos\n\
+mさ s bo! Tさ , さ s un regal\n\
+per tu. Segur que et fa\n\
+entrar en calor."))
 
-DEFINE_DIALOG(DIALOG_112, 1, 4, 30, 200, _("\
-Collect as many coins as\n\
-possible! They'll refill\n\
-your Power Meter.\n\
-\n\
-You can check to see how\n\
-many coins you've\n\
-collected in each of the\n\
-15 enemy worlds.\n\
-You can also recover\n\
-power by touching the\n\
-Spinning Heart.\n\
-\n\
-The faster you run\n\
-through the heart, the\n\
-more power you'll recover."))
+// FET
+DEFINE_DIALOG(DIALOG_112, 1, 3, 30, 200, _("\
+Agafa tantes monedes\n\
+com puguis! Reompliran\n\
+la teva salut.\n\
+Pots mirar quantes\n\
+monedes has agafat a\n\
+cadascun dels 15 mons.\n\
+Tambさ  pots recuperar\n\
+salut tocant el\n\
+Cor Giratori.\n\
+Com mさ s rapid hi corris\n\
+a travさ s, mさ s salut\n\
+et restablirま ."))
 
+// FET
 DEFINE_DIALOG(DIALOG_113, 1, 6, 30, 200, _("\
-There are special Caps in\n\
-the red, green and blue\n\
-blocks. Step on the\n\
-switches in the hidden\n\
-courses to activate the\n\
-Cap Blocks."))
+Hi ha Barrets especials\n\
+als blocs rojos, verds,\n\
+grocs i blaus. Activa els\n\
+interruptors dels nivells\n\
+amagats per activar\n\
+els Blocs dels Barrets."))
 
+// FET
 DEFINE_DIALOG(DIALOG_114, 1, 5, 95, 200, _("\
-It makes me so mad! We\n\
-build your houses, your\n\
-castles. We pave your\n\
-roads, and still you\n\
-walk all over us.\n\
-Do you ever say thank\n\
-you? No! Well, you're not\n\
-going to wipe your feet\n\
-on me! I think I'll crush\n\
-you just for fun!\n\
-Do you have a problem\n\
-with that? Just try to\n\
-pound me, wimp! Ha!"))
+Em posa de mala lluna!\n\
+Us construみ m les cases,\n\
+els castells, us asfaltem\n\
+les carreteres i encara\n\
+ens passeu per sobre.\n\
+I ens ho agraみ u mai? No!\n\
+Doncs tu no t'espolsarま s\n\
+els peus sobre mi!\n\
+Crec que t'esclafarさ \n\
+nomさ s per diversiす !\n\
+\n\
+Tens res a dir? Doncs\n\
+intenta esclafar-me,\n\
+bleda! Ha!"))
 
-DEFINE_DIALOG(DIALOG_115, 1, 5, 95, 200, _("\
-No! Crushed again!\n\
-I'm just a stepping stone,\n\
-after all. I won't gravel,\n\
-er, grovel. Here, you win.\n\
-Take this with you!"))
+// FET
+DEFINE_DIALOG(DIALOG_115, 1, 3, 95, 200, _("\
+No! Altre cop derrotat!\n\
+Nomさ s faig que caure a\n\
+la mateixa pedra.\n\
+Cま sum l'os pedrer!\n\
+Mira, tu guanyes.\n\
+Emporta't aixた  amb tu!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_116, 1, 5, 95, 200, _("\
-Whaaa....Whaaat?\n\
-Can it be that a\n\
-pipsqueak like you has\n\
-defused the Bob-omb\n\
-king????\n\
-You might be fast enough\n\
-to ground me, but you'll\n\
-have to pick up the pace\n\
-if you want to take King\n\
-Bowser by the tail.\n\
-Methinks my troops could\n\
-learn a lesson from you!\n\
-Here is your Star, as I\n\
-promised, Mario.\n\
+Que... quこ eeee?\n\
+Com さ s possible que\n\
+un pelacanyes com tu\n\
+hagi pogut desactivar\n\
+al Rei Bob-omb??\n\
+Serま s prou rま pid com per\n\
+llenむ ar-me, perた  haurま s\n\
+de millorar el ritme\n\
+si vols agafar al Rei\n\
+Bowser per la cua.\n\
+Em sembla que les meves\n\
+tropes podrien aprendre\n\
+de tu! Tさ  la teva Estrella,\n\
+com he promこ s, Mario.\n\
 \n\
-If you want to see me\n\
-again, select this Star\n\
-from the menu. For now,\n\
-farewell."))
+Si em vols tornar a veure\n\
+tria aquesta Estrella\n\
+des del menせ . Per ara,\n\
+adさ u-siau."))
 
+// FET
 DEFINE_DIALOG(DIALOG_117, 1, 1, 95, 200, _("\
-Who...walk...here?\n\
-Who...break...seal?\n\
-Wake..ancient..ones?\n\
-We no like light...\n\
-Rrrrummbbble...\n\
-We no like...intruders!\n\
-Now battle...\n\
-...hand...\n\
-...to...\n\
-...hand!"))
+Qui... caminar... aquし ?\n\
+Qui... trencar... segell?\n\
+Llevar... vells... さ ssers?\n\
+Nosaltres no voler llum...\n\
+Barrom... barrabommmm...\n\
+No agradar... intrusos!\n\
+Ara lluitar...\n\
+mま ...\n\
+a...\n\
+mま !"))
 
+// FET
 DEFINE_DIALOG(DIALOG_118, 1, 6, 95, 200, _("\
-Grrrrumbbble!\n\
-What...happen?\n\
-We...crushed like pebble.\n\
-You so strong!\n\
-You rule ancient pyramid!\n\
-For today...\n\
-Now, take Star of Power.\n\
-We...sleep...darkness."))
+Barrabammmmm!\n\
+Quこ ... passar?\n\
+Esclafats... com pedretes.\n\
+Tu ser molt fort!\n\
+Tu governar vella\n\
+pirま mide! Per ara...\n\
+\n\
+Pren Estrella Poder.\n\
+\n\
+\n\
+Dormir... nos... foscor."))
 
+// FET
 DEFINE_DIALOG(DIALOG_119, 1, 6, 30, 200, _("\
-Grrr! I was a bit\n\
-careless. This is not as I\n\
-had planned...but I still\n\
-hold the power of the\n\
-Stars, and I still have\n\
-Peach.\n\
-Bwa ha ha! You'll get no\n\
-more Stars from me! I'm\n\
-not finished with you yet,\n\
-but I'll let you go for\n\
-now. You'll pay for this...\n\
-later!"))
+Grrr! M'he distret.\n\
+Aixた  no ha anat com\n\
+ho havia planejat...\n\
+Perた  encara tinc el poder\n\
+de les Estrelles, i encara\n\
+tinc la Peach.\n\
+Bua ha ha! No veurま s mさ s\n\
+Estrelles meves! Encara\n\
+no he acabat amb tu,\n\
+perた  et deixarさ  anar\n\
+per ara. Pagarま s per\n\
+aixた ... Mさ s tard!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_120, 1, 4, 30, 200, _("\
-Ooowaah! Can it be that\n\
-I've lost??? The power of\n\
-the Stars has failed me...\n\
-this time.\n\
-Consider this a draw.\n\
-Next time, I'll be in\n\
-perfect condition.\n\
+Uuuuaah! Pot ser que\n\
+hagi perdut??? El poder\n\
+de les Estrelles m'ha\n\
+fallat... aquest cop.\n\
+Considera-ho un empat.\n\
+Per la propera estarさ \n\
+en perfectes condicions.\n\
 \n\
-Now, if you want to see\n\
-your precious Princess,\n\
-come to the top of the\n\
-tower.\n\
-I'll be waiting!\n\
-Gwa ha ha ha!"))
+Ei, si vols veure la\n\
+teva preciosa Princesa,\n\
+vine a la part mさ s alta\n\
+de la torre.\n\
+\n\
+T'estarさ  esperant!\n\
+Bua ha ha ha!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_121, 1, 5, 30, 200, _("\
-Nooo! It can't be!\n\
-You've really beaten me,\n\
-Mario?!! I gave those\n\
-troops power, but now\n\
-it's fading away!\n\
-Arrgghh! I can see peace\n\
-returning to the world! I\n\
-can't stand it! Hmmm...\n\
-It's not over yet...\n\
+Nooo!!! No pot ser!\n\
+De debた  m'has derrotat,\n\
+Mario?! Vaig donar poder\n\
+a les meves tropes, perた \n\
+ara estま  desapareixent!\n\
+Arrgg! Puc veure la pau\n\
+tornant al mす n!\n\
+No ho suporto! Hmm...\n\
+Aixた  no さ s la fi encara...\n\
 \n\
-C'mon troops! Let's watch\n\
-the ending together!\n\
-Bwa ha ha!"))
+\n\
+Au, tropes! Veguem tots\n\
+junts el final!\n\
+Bua ha ha!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_122, 1, 4, 30, 200, _("\
-The Black Hole\n\
-Right: Work Elevator\n\
-/// Cloudy Maze\n\
-Left: Underground Lake"))
+El Forat Negre\n\
+Dreta: Elevador\n\
+//   Laberint Boirす s\n\
+Esquerra: Llac Subterrani"))
 
+// FET
 DEFINE_DIALOG(DIALOG_123, 1, 4, 30, 200, _("\
-Metal Cavern\n\
-Right: To Waterfall\n\
-Left: Metal Cap Switch"))
+Cova Fこ rria\n\
+Dreta: La Cascada\n\
+Esquerra: Interruptor\n\
+del Barret Metま l&lic"))
 
+// FET
 DEFINE_DIALOG(DIALOG_124, 1, 4, 30, 200, _("\
-Work Elevator\n\
-Danger!!\n\
-Read instructions\n\
-thoroughly!\n\
-Elevator continues in the\n\
-direction of the arrow\n\
-activated."))
+Plataforma Elevadora.\n\
+\n\
+Alerta!! Llegiu les\n\
+instruccions amb cura!\n\
+L'Elevador continua rumb\n\
+a la direcciす  que marca\n\
+la fletxa activada."))
 
-DEFINE_DIALOG(DIALOG_125, 1, 3, 30, 200, _("\
-Hazy Maze-Exit\n\
-Danger! Closed.\n\
-Turn back now."))
+// FET
+DEFINE_DIALOG(DIALOG_125, 1, 2, 30, 200, _("\
+Sortida del\n\
+Laberint.\n\
+Perill! Tancat.\n\
+Torna enrrere."))
 
-DEFINE_DIALOG(DIALOG_126, 2, 3, 30, 200, _("\
-Up: Black Hole\n\
-Right: Work Elevator\n\
-/// Hazy Maze"))
+// FET
+DEFINE_DIALOG(DIALOG_126, 2, 4, 30, 200, _("\
+Amunt: Forat Negre\n\
+Dreta: Plataforma\n\
+Elevadora\n\
+// Laberint Boirす s"))
 
+// FET
 DEFINE_DIALOG(DIALOG_127, 3, 4, 30, 200, _("\
-Underground Lake\n\
-Right: Metal Cave\n\
-Left: Abandoned Mine\n\
-///(Closed)\n\
-A gentle sea dragon lives\n\
-here. Pound on his back to\n\
-make him lower his head.\n\
-Don't become his lunch."))
+Llac Subterrani\n\
+Dreta: Cova Fこ rria\n\
+Esquerra: Mina\n\
+Abandonada (Tancada)\n\
+Un gentil drac marし  viu\n\
+aquし . Fes-li un Salt\n\
+Bomba al llom per a que\n\
+abaxi el cap.\n\
+\n\
+No et converteixis en\n\
+el seu menjar."))
 
+// FET
 DEFINE_DIALOG(DIALOG_128, 1, 4, 95, 200, _("\
-You must fight with\n\
-honor! It is against the\n\
-royal rules to throw the\n\
-king out of the ring!"))
+Has de lluitar amb\n\
+honor! え s contrari a les\n\
+normes reials llenむ ar el\n\
+rei fora del ring!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_129, 1, 5, 30, 200, _("\
-Welcome to the Vanish\n\
-Cap Switch Course! All of\n\
-the blue blocks you find\n\
-will become solid once you\n\
-step on the Cap Switch.\n\
-You'll disappear when you\n\
-put on the Vanish Cap, so\n\
-you'll be able to elude\n\
-enemies and walk through\n\
-many things. Try it out!"))
+Benvingut al Mす n de\n\
+l'Interruptor del Barret\n\
+Esvaみ t! Tots els blocs\n\
+blaus que trobis seran\n\
+sた lids quan l'esclafis.\n\
+Et dissiparま s en posar-te\n\
+el Barret, i podrま s eludir\n\
+enemics i caminar a\n\
+travさ s de moltes coses.\n\
+Prova-ho!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_130, 1, 5, 30, 200, _("\
-Welcome to the Metal Cap\n\
-Switch Course! Once you\n\
-step on the Cap Switch,\n\
-the green blocks will\n\
-become solid.\n\
-When you turn your body\n\
-into metal with the Metal\n\
-Cap, you can walk\n\
-underwater! Try it!"))
+Benvingut al Mす n de\n\
+l'Interruptor del Barret\n\
+Metま l&lic! Un cop pitgis\n\
+l'interruptor els blocs\n\
+verds seran sた lids.\n\
+Quan el teu cos sigui\n\
+de metall amb el Barret\n\
+Metま l&lic podrま s caminar\n\
+sota l'aigua!\n\
+Prova-ho!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_131, 1, 5, 30, 200, _("\
-Welcome to the Wing Cap\n\
-Course! Step on the red\n\
-switch at the top of the\n\
-tower, in the center of\n\
-the rainbow ring.\n\
-When you trigger the\n\
-switch, all of the red\n\
-blocks you find will\n\
-become solid.\n\
+Benvingut al Mす n del\n\
+Barret Alat! Prem\n\
+l'interruptor vermell al\n\
+cim de la torre, enmig de\n\
+l'arc de Sant Martし .\n\
 \n\
-Try out the Wing Cap! Do\n\
-the Triple Jump to take\n\
-off and press [Z] to land.\n\
+Quan l'activis,\n\
+tots els blocs vermells\n\
+que trobis seran sた lids.\n\
 \n\
 \n\
-Pull back on the Control\n\
-Stick to go up and push\n\
-forward to nose down,\n\
-just as you would when\n\
-flying an airplane."))
+Prova el Barret Alat!\n\
+Enlaira't amb un Salt\n\
+Triple i aterra amb [Z].\n\
+\n\
+Mou-te cap enrere la\n\
+Palanca de Control per\n\
+ascendir i cap endavant\n\
+per baixar, com si\n\
+fossis pilotant un aviす ."))
 
+// FET
 DEFINE_DIALOG(DIALOG_132, 1, 4, 30, 200, _("\
-Whoa, Mario, pal, you\n\
-aren't trying to cheat,\n\
-are you? Shortcuts aren't\n\
-allowed.\n\
-Now, I know that you\n\
-know better. You're\n\
-disqualified! Next time,\n\
-play fair!"))
+Uau, Mario, nano, no\n\
+tractarま s de fer trampes,\n\
+oi? Les dreceres no\n\
+estan permeses.\n\
+Sさ  que pots fer-ho bさ \n\
+com cal.\n\
+Estま s desqualificat!\n\
+El proper cop sigues just!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_133, 1, 6, 30, 200, _("\
-Am I glad to see you! The\n\
-Princess...and I...and,\n\
-well, everybody...we're all\n\
-trapped inside the castle\n\
-walls.\n\
+Com m'alegro de veure't!\n\
+La Princesa... i jo... i,\n\
+bさ , tothom... som tots\n\
+atrapats dins l'interior\n\
+del castell.\n\
 \n\
-Bowser has stolen the\n\
-castle's Stars, and he's\n\
-using their power to\n\
-create his own world in\n\
-the paintings and walls.\n\
+En Bowser ha robat les\n\
+Estrelles del castell,\n\
+i amb el seu poder estま \n\
+creant el seu propi mす n\n\
+als quadres de les parets.\n\
 \n\
-Please recover the Power\n\
-Stars! As you find them,\n\
-you can use their power\n\
-to open the doors that\n\
-Bowser has sealed.\n\
+Recupera les Estrelles!\n\
+Podrま s fer せ s de\n\
+les que trobis\n\
+per obrir les portes\n\
+tancades per en Bowser.\n\
 \n\
-There are four rooms on\n\
-the first floor. Start in\n\
-the one with the painting\n\
-of Bob-omb inside. It's\n\
-the only room that Bowser\n\
-hasn't sealed.\n\
-When you collect eight\n\
-Power Stars, you'll be\n\
-able to open the door\n\
-with the big star. The\n\
-Princess must be inside!"))
+Hi ha quatre habitacions\n\
+al primer pis. Comenむ a\n\
+amb la que tさ  un quadre\n\
+d'un Bob-omb. さ s l'せ nica\n\
+habitaciす  que en Bowser\n\
+no ha tancat.\n\
+Quan tinguis vuit\n\
+Estrelles, podrま s obrir\n\
+la porta amb l'estrella\n\
+gran. La Princesa\n\
+deu ser dins!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_134, 1, 5, 30, 200, _("\
-The names of the Stars\n\
-are also hints for\n\
-finding them. They are\n\
-displayed at the beginning\n\
-of each course.\n\
-You can collect the Stars\n\
-in any order. You won't\n\
-find some Stars, enemies\n\
-or items unless you select\n\
-a specific Star.\n\
-After you collect some\n\
-Stars, you can try\n\
-another course.\n\
-We're all waiting for\n\
-your help!"))
+Els noms de les Estrelles\n\
+sす n tambさ  pistes per\n\
+trobar-les. Es mostren\n\
+al principi de cada\n\
+mす n.\n\
+Pots aconseguir Estrelles\n\
+dn qualsevol ordre. No\n\
+veurま s certes Estrelles,\n\
+enemics o し tems si no\n\
+en tries una concreta.\n\
+Quan hagis aconseguit\n\
+algunes Estrelles podrま s\n\
+provar un altre mす n.\n\
+Estem esperant tots\n\
+la teva ajuda!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_135, 1, 5, 30, 200, _("\
-It was Bowser who stole\n\
-the Stars. I saw him with\n\
-my own eyes!\n\
 \n\
+Va ser en Bowser qui\n\
+va robar les Estrelles! Els\n\
+meus ulls no m'enganyen!\n\
 \n\
-He's hidden six Stars in\n\
-each course, but you\n\
-won't find all of them in\n\
-some courses until you\n\
-press the Cap Switches.\n\
-The Stars you've found\n\
-will show on each course's\n\
-starting screen.\n\
+Ha amagat sis Estrelles\n\
+a cada mす n, perた  no les\n\
+trobarま s totes en alguns\n\
+mons fins que premis els\n\
+Interruptors de Barrets.\n\
 \n\
+Les Estrelles trobades es\n\
+mostraran a la pantalla\n\
+d'inici de cada mす n.\n\
 \n\
-If you want to see some\n\
-of the enemies you've\n\
-already defeated, select\n\
-the Stars you recovered\n\
-from them."))
+Si vols veure alguns\n\
+enemics que ja has\n\
+derrotat, tria l'Estrella\n\
+que vas recuperar\n\
+d'ells."))
 
+// FET
 DEFINE_DIALOG(DIALOG_136, 1, 6, 30, 200, _("\
-Wow! You've already\n\
-recovered that many\n\
-Stars? Way to go, Mario!\n\
-I'll bet you'll have us out\n\
-of here in no time!\n\
+Uau! Ja tens\n\
+tantes Estrelles?\n\
+Ben fet, Mario!\n\
+Segur que ens treurま s\n\
+d'aquし  en un tres i\n\
+no res!\n\
+Tot i aixし , vigila. En\n\
+Bowser i la seva colla\n\
+sす n l'exemple de 『malし cia』.\n\
+Atent al meu consell: quan\n\
+hagis de recuperar\n\
+energia agafa monedes.\n\
+Les Monedes Grogues\n\
+omplen un tros del\n\
+Mesurador de Forむ a, les\n\
+Vermelles et tornen dos\n\
+peces i les Blaves, cinc.\n\
 \n\
-Be careful, though.\n\
-Bowser and his band\n\
-wrote the book on 『bad.』\n\
-Take my advice: When you\n\
-need to recover from\n\
-injuries, collect coins.\n\
-Yellow Coins refill one\n\
-piece of the Power Meter,\n\
-Red Coins refill two\n\
-pieces, and Blue Coins\n\
-refill five.\n\
-\n\
-To make Blue Coins\n\
-appear, pound on Blue\n\
-Coin Blocks.\n\
+Perquこ  les monedes blaves\n\
+apareguin, esclafa el\n\
+Bloc de Monedes Blaves.\n\
 \n\
 \n\
 \n\
-Also, if you fall from\n\
-high places, you'll\n\
-minimize damage if you\n\
-Pound the Ground as you\n\
-land."))
+A mさ s, si caus de\n\
+molt alt, podrま s\n\
+minimitzar el dany si\n\
+fas un Salt Bomba\n\
+quan t'apropes a terra."))
 
+// FET
 DEFINE_DIALOG(DIALOG_137, 1, 6, 30, 200, _("\
-Thanks, Mario! The castle\n\
-is recovering its energy\n\
-as you retrieve Power\n\
-Stars, and you've chased\n\
-Bowser right out of here,\n\
-on to some area ahead.\n\
-Oh, by the by, are you\n\
-collecting coins? Special\n\
-Stars appear when you\n\
-collect 100 coins in each\n\
-of the 15 courses!"))
+Grま cies, Mario!\n\
+El castell va recuperant\n\
+energia a mesura que\n\
+recuperes Estrelles,\n\
+i en Bowser ha marxat\n\
+a un altre mす n.\n\
+Ai, per cert, vas agafant\n\
+monedes? Apareixen\n\
+Estrelles Secretes quan\n\
+agafes 100 monedes en\n\
+cadascun dels 15 mons!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_138, 1, 3, 30, 200, _("\
-Down: Underground Lake\n\
-Left: Black Hole\n\
-Right: Hazy Maze (Closed)"))
+Sota: Llac Subterrani\n\
+Esquerra: Forat Negre\n\
+Dreta: Laberint (Tancat)"))
 
+// FET
 DEFINE_DIALOG(DIALOG_139, 1, 6, 30, 200, _("\
-Above: Automatic Elevator\n\
-Elevator begins\n\
-automatically and follows\n\
-pre-set course.\n\
-It disappears\n\
-automatically, too."))
+Dalt: Elevador Automま tic\n\
+L'Elevador s'inicia\n\
+automaticament i\n\
+segueix el camし  establert.\n\
+Desapareix desprさ s\n\
+sol, tambさ ."))
 
+// FET
 DEFINE_DIALOG(DIALOG_140, 1, 6, 30, 200, _("\
-Elevator Area\n\
-Right: Hazy Maze\n\
-/// Entrance\n\
-Left: Black Hole\n\
-///Elevator 1\n\
-Arrow: You are here"))
+Zona de l'Elevador\n\
+Dreta: Laberint\n\
+/// Entrada\n\
+Esquerra: Forat Negre\n\
+/// Elevador 1\n\
+Fletxa: Ets aquし "))
 
+//FET
 DEFINE_DIALOG(DIALOG_141, 1, 5, 150, 200, _("\
-You've recovered one of\n\
-the stolen Power Stars!\n\
-Now you can open some of\n\
-the sealed doors in the\n\
-castle.\n\
-Try the Princess's room\n\
-on the second floor and\n\
-the room with the\n\
-painting of Whomp's\n\
-Fortress on Floor 1.\n\
-Bowser's troops are still\n\
-gaining power, so you\n\
-can't give up. Save us,\n\
-Mario! Keep searching for\n\
-Stars!"))
+Ja tens una de les\n\
+Estrelles robades!\n\
+Ja pots obrir algunes\n\
+de les portes tancades\n\
+del castell.\n\
+Revisa l'habitaciす  de la\n\
+Princesa al segon pis i\n\
+l'habitaciす  amb el quadre\n\
+de la Fortalesa d'en\n\
+Whomp al primer pis.\n\
+Les tropes d'en Bowser\n\
+van guanyant poder,\n\
+no et pots rendir.\n\
+Salva'ns, Mario! Segueix\n\
+cercant Estrelles!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_142, 1, 5, 150, 200, _("\
-You've recovered three\n\
-Power Stars! Now you can\n\
-open any door with a 3\n\
-on its star.\n\
+Ja tens tres Esrelles\n\
+de Poder! Ara pots\n\
+obrir portes amb un\n\
+3 en la seva estrella.\n\
 \n\
-You can come and go from\n\
-the open courses as you\n\
-please. The enemies ahead\n\
-are even meaner, so be\n\
-careful!"))
+Pots entrar i sortir dels\n\
+mons oberts quan vulguis.\n\
+Els enemics que t'esperen\n\
+sす n encara mさ s dolents,\n\
+ves-hi amb compte!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_143, 1, 6, 150, 200, _("\
-You've recovered eight of\n\
-the Power Stars! Now you\n\
-can open the door with\n\
-the big Star! But Bowser\n\
-is just ahead...can you\n\
-hear the Princess calling?"))
+Has recuperat vuit\n\
+Estrelles! Ja pots obrir\n\
+la porta amb la gran\n\
+estrella. Perた  en Bowser\n\
+さ s enfront... No\n\
+sents la Princesa cridar?"))
 
+// FET
 DEFINE_DIALOG(DIALOG_144, 1, 6, 150, 200, _("\
-You've recovered 30\n\
-Power Stars! Now you can\n\
-open the door with the\n\
-big Star! But before you\n\
-move on, how's it going\n\
-otherwise?\n\
-Did you pound the two\n\
-columns down? You didn't\n\
-lose your hat, did you?\n\
-If you did, you'll have to\n\
-stomp on the condor to\n\
-get it back!\n\
-They say that Bowser has\n\
-sneaked out of the sea\n\
-and into the underground.\n\
-Have you finally\n\
-cornered him?"))
+Ja tens 30 Estrelles!\n\
+Ara ja pots obrir\n\
+la porta amb la gran\n\
+Estrella! Perた  abans\n\
+de seguir, com va tot\n\
+per allま , Mario?\n\
+Ja has esclafat les dues\n\
+dues columnes de baix?\n\
+Has perdut la gorra?\n\
+Si さ s aixし , haurま s\n\
+d'atrapar al cた ndor\n\
+per recuperar-la!\n\
+\n\
+Diuen que en Bowser\n\
+ha marxat del mar i\n\
+ha anat sota terra.\n\
+Ja l'has acorralat?"))
 
+// FET
 DEFINE_DIALOG(DIALOG_145, 1, 6, 150, 200, _("\
-You've recovered 50\n\
-Power Stars! Now you can\n\
-open the Star Door on the\n\
-third floor. Bowser's\n\
-there, you know.\n\
+Ja tens 50 Estrelles!\n\
 \n\
-Oh! You've found all of\n\
-the Cap Switches, haven't\n\
-you? Red, green and blue?\n\
-The Caps you get from the\n\
-colored blocks are really\n\
-helpful.\n\
-Hurry along, now. The\n\
-third floor is just ahead."))
+Ara ja pots obrir la\n\
+Porta d'Estrella del\n\
+tercer pis. En Bowser\n\
+さ s allま .\n\
+Oh! Has trobat tots els\n\
+Interruptors de Barrets,\n\
+oi? Vermell, verd i blau?\n\
+Els barrets dels blocs\n\
+de colors sす n ben せ tils.\n\
+\n\
+\n\
+\n\
+Afanya't. El tercer\n\
+pis さ s just davant."))
 
+// FET
 DEFINE_DIALOG(DIALOG_146, 1, 6, 150, 200, _("\
-You've found 70 Power\n\
-Stars! The mystery of the\n\
-endless stairs is solved,\n\
-thanks to you--and is\n\
-Bowser ever upset! Now,\n\
-on to the final bout!"))
+Has trobat 70 Estrelles!\n\
+El misteri de les escales\n\
+infinites s'ha resolt\n\
+grま cies a tu, i segur\n\
+has enrabiat en Bowser!\n\
+Ara, al combat final!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_147, 1, 5, 30, 200, _("\
-Are you using the Cap\n\
-Blocks? You really should,\n\
-you know.\n\
 \n\
+Ja fas servir els Blocs\n\
+de Barret? T'anirien\n\
+genial, ho sabies?\n\
 \n\
-To make them solid so you\n\
-can break them, you have\n\
-to press the colored Cap\n\
-Switches in the castle's\n\
-hidden courses.\n\
-You'll find the hidden\n\
-courses only after\n\
-regaining some of the\n\
-Power Stars.\n\
+Per fer-los sた lids\n\
+i trencar-los, nomさ s\n\
+prem els Interruptors\n\
+de Barrets dels mons\n\
+ocults del castell.\n\
+Alguns els trobarま s\n\
+nomさ s en recuperar\n\
+certes Estrelles\n\
+de Poder.\n\
 \n\
-The Cap Blocks are a big\n\
-help! Red for the Wing\n\
-Cap, green for the Metal\n\
-Cap, blue for the Vanish\n\
-Cap."))
+Els Blocs de Barret sす n de\n\
+gran ajuda! Vermell per\n\
+l'Alat, verd pel\n\
+Metま l&lic i blau per\n\
+l'Esvaみ t."))
 
+// FET
 DEFINE_DIALOG(DIALOG_148, 1, 6, 30, 200, _("\
-Snowman Mountain ahead.\n\
-Keep out! And don't try\n\
-the Triple Jump over the\n\
-ice block shooter.\n\
+Davant, la Muntanya del\n\
+Ninot de Neu.\n\
+No hi passis!\n\
 \n\
-\n\
-If you fall into the\n\
-freezing pond, your power\n\
-decreases quickly, and\n\
-you won't recover\n\
-automatically.\n\
-//--The Snowman"))
+I no facis triple salts\n\
+sobre els blocs de gel.\n\
+Si caus a l'estany, la\n\
+teva forむ a disminuirま \n\
+instantま niament i no es\n\
+recuperarま  sola quan\n\
+hi surtis.\n\
+//--El ninot de neu"))
 
+// FET
 DEFINE_DIALOG(DIALOG_149, 1, 3, 30, 200, _("\
-Welcome to\n\
-Princess Toadstool's\n\
-secret slide!\n\
-There's a Star hidden\n\
-here that Bowser couldn't\n\
-find.\n\
-When you slide, press\n\
-forward to speed up,\n\
-pull back to slow down.\n\
-If you slide really\n\
-fast, you'll win the Star!"))
+Benvingut al tobogan\n\
+secret de la Princesa!\n\
+\n\
+Aquし  hi ha una Estrella\n\
+amagada que en Bowser\n\
+no ha trobat.\n\
+Quan baixis, inclina't cap\n\
+endavant per accelerar\n\
+i enrere per frenar.\n\
+Si baixes prou rま pid\n\
+guanyarま s l'Estrella!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_150, 1, 5, 30, 200, _("\
-Waaaa! You've flooded my\n\
-house! Wh-why?? Look at\n\
-this mess! What am I\n\
-going to do now?\n\
+Buaaa! M'has inundat la\n\
+casa! Pe-per quこ ??\n\
+Mira aquest desastre!\n\
+Quこ  hi farさ  jo ara?\n\
 \n\
-The ceiling's ruined, the\n\
-floor is soaked...what to\n\
-do, what to do? Huff...\n\
-huff...it makes me so...\n\
-MAD!!!\n\
-Everything's been going\n\
-wrong ever since I got\n\
-this Star...It's so shiny,\n\
-but it makes me feel...\n\
-strange..."))
+El sostre estま  destrossat,\n\
+el terra さ s moll...\n\
+quこ  faig, quこ  faig?\n\
+Grr... grr... em treu...\n\
+DE POLLEGUERA!!\n\
+Tot va malament\n\
+des que tinc aquesta\n\
+Estrella... さ s tan\n\
+brillant, perた  em fa\n\
+sentir... estranya..."))
 
+// FET
 DEFINE_DIALOG(DIALOG_151, 1, 4, 30, 200, _("\
-I can't take this\n\
-anymore! First you get\n\
-me all wet, then you\n\
-stomp on me!\n\
-Now I'm really, really,\n\
-REALLY mad!\n\
-Waaaaaaaaaaaaaaaaa!!!"))
+No puc mさ s amb tu!\n\
+Primer em deixes tota\n\
+xopa, i ara em\n\
+trepitjes!\n\
+M'estま s enrabiant de\n\
+mala, mala manera!\n\
+Uaaaaaaaaaaaaaaaaa!!!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_152, 1, 3, 30, 200, _("\
-Owwch! Uncle! Uncle!\n\
-Okay, I " GIVE_UP ". Take this\n\
-Star!\n\
-Whew! I feel better now.\n\
-I don't really need it\n\
-anymore, anyway--\n\
-I can see the stars\n\
-through my ceiling at\n\
-night.\n\
-They make me feel...\n\
-...peaceful. Please, come\n\
-back and visit anytime."))
+Au! Prou! Prou!\n\
+D'acord, em rendeixo.\n\
+Agafa l'Estrella!\n\
+Buf. Ara em sento millor.\n\
+Igualment, en realitat no\n\
+la necessito per a res.\n\
+Puc veure les estrelles\n\
+a travさ s del sostre\n\
+de nit.\n\
+Em fan sentir... en pau.\n\
+Si us plau, torna de\n\
+visita quan vulguis."))
 
+// FET
 DEFINE_DIALOG(DIALOG_153, 1, 4, 30, 200, _("\
-Hey! Who's there?\n\
-What's climbing on me?\n\
-Is it an ice ant?\n\
-A snow flea?\n\
-Whatever it is, it's\n\
-bugging me! I think I'll\n\
-blow it away!"))
+Ei! Qui hi ha?\n\
+Quこ  m'estま  escalant?\n\
+え s una aranya gこ lida?\n\
+Una puむ a de neu?\n\
+Sigui el que sigui,\n\
+em molesta! Doncs\n\
+crec que l'esbufegarさ !"))
 
+// FET
 DEFINE_DIALOG(DIALOG_154, 1, 5, 30, 200, _("\
-Hold on to your hat! If\n\
-you lose it, you'll be\n\
-easily injured. If you\n\
-lose it, look for it in the\n\
-course where you lost it.\n\
-Speaking of lost, the\n\
-Princess is still stuck in\n\
-the walls somewhere.\n\
-Please help, Mario!\n\
-\n\
-Oh, you know that there\n\
-are secret worlds in the\n\
-walls as well as in the\n\
-paintings, right?"))
+Agafa't a la gorra! Si\n\
+la perds, et farま s mal\n\
+fま cilment. Aleshores,\n\
+l'haurま s de buscar pel\n\
+mす n on la vas perdre.\n\
+Parlant de perdre, la\n\
+Princesa encara estま \n\
+atrapada dins el castell.\n\
+Si us plau, ajuda'ns,\n\
+Mario!\n\
+Oh, sabies que hi ha\n\
+mons enemics dins dins\n\
+castell a part dels\n\
+dels quadres, oi?"))
 
+// FET
 DEFINE_DIALOG(DIALOG_155, 1, 6, 30, 200, _("\
-Thanks to the power of\n\
-the Stars, life is\n\
-returning to the castle.\n\
-Please, Mario, you have\n\
-to give Bowser the boot!\n\
+Grま cies al poder de les\n\
+Estrelles, la vida\n\
+va tornant al castell.\n\
 \n\
-Here, let me tell you a\n\
-little something about the\n\
-castle. In the room with\n\
-the mirrors, look carefully\n\
-for anything that's not\n\
-reflected in the mirror.\n\
-And when you go to the\n\
-water town, you can flood\n\
-it with a high jump into\n\
-the painting."))
+Si us plau, Mario, dona-li\n\
+una pallissa a en Bowser!\n\
+Deixa'm que t'expliqui\n\
+una coseta del castell.\n\
+A l'habitaciす  dels\n\
+miralls, fixa't en tot\n\
+allた  que no s'hi\n\
+reflectexi.\n\
+\n\
+I quan vagis a la vila\n\
+d'aigua, pots inundar-la\n\
+entrant-hi fent un salt\n\
+alt dins al quadre."))
 
+// FET
 DEFINE_DIALOG(DIALOG_156, 1, 5, 30, 200, _("\
-The world inside the\n\
-clock is so strange!\n\
-When you jump inside,\n\
-watch the position of\n\
-the big hand!"))
+El mす n dins el\n\
+rellotge さ s estrany!\n\
+Quan hi saltis dins,\n\
+atent a la posiciす \n\
+de la minutera!"))
 
-DEFINE_DIALOG(DIALOG_157, 1, 5, 30, 200, _("\
-Watch out! Don't let\n\
-yourself be swallowed by\n\
-quicksand.\n\
+// FET
+DEFINE_DIALOG(DIALOG_157, 1, 4, 30, 200, _("\
+Compte! Que no se\n\
+t'empassin les arenes\n\
+movedisses!\n\
 \n\
+Si t'enfonses a la sorra\n\
+no podrま s saltar, i si\n\
+hi fiques el cap dins\n\
+t'asfixiarま s.\n\
 \n\
-If you sink into the sand,\n\
-you won't be able to\n\
-jump, and if your head\n\
-goes under, you'll be\n\
-smothered.\n\
-The dark areas are\n\
-bottomless pits."))
+Les zones fosques sす n\n\
+pous sense fons."))
 
+// FET
 DEFINE_DIALOG(DIALOG_158, 1, 6, 30, 200, _("\
-1. If you jump repeatedly\n\
-and time it right, you'll\n\
-jump higher and higher.\n\
-If you run really fast and\n\
-time three jumps right,\n\
-you can do a Triple Jump.\n\
-2. Jump into a solid wall,\n\
-then jump again when you\n\
-hit the wall. You can\n\
-bounce to a higher level\n\
-using this Wall Kick."))
+1. Si saltes repetidament\n\
+en instants precisos\n\
+saltarま s encara mさ s alt.\n\
+Si agafes embranzida i\n\
+fas bさ  tres salts seguits\n\
+farま s un Triple Salt.\n\
+2. Salta directe a una\n\
+paret, i quan la toquis,\n\
+salta. Podrま s arribar\n\
+mさ s amunt utilitzant\n\
+el Salt de Paret."))
 
-DEFINE_DIALOG(DIALOG_159, 1, 6, 30, 200, _("\
-3. If you stop, press [Z]\n\
-to crouch, then jump, you\n\
-can perform a Backward\n\
-Somersault. To do a Long\n\
-Jump, run fast, press [Z],\n\
-then jump."))
+// FET
+DEFINE_DIALOG(DIALOG_159, 1, 4, 30, 200, _("\
+3. Si t'atures, prem [Z]\n\
+per ajupir-te, desprさ s\n\
+salta i farま s una\n\
+Tombarella cap Enrere.\n\
+Per fer un Salt Llarg\n\
+corre de pressa, prem [Z]\n\
+i desprさ s salta."))
 
+// FET
 DEFINE_DIALOG(DIALOG_160, 1, 4, 30, 200, _("\
-Press [B] while running\n\
-fast to do a Body Slide\n\
-attack. To stand while\n\
-sliding, press [A] or [B]."))
+Prem [B] mentre corres\n\
+rま pid per lliscar amb\n\
+el cos. Per llevar-te,\n\
+prem [A] o [B]."))
 
-#ifdef VERSION_EU
-#define KEEP_ON_PLAYING ".."
-#else
-#define KEEP_ON_PLAYING "\n\
-We want you to keep on\n\
-playing, so we have a\n\
-little something for you.\n\
-We hope that you like it!\n\
-Enjoy!!!"
-#endif
-
+// FET
 DEFINE_DIALOG(DIALOG_161, 1, 4, 30, 200, _("\
 Mario!!!\n\
-It that really you???\n\
-It has been so long since\n\
-our last adventure!\n\
-They told me that I might\n\
-see you if I waited here,\n\
-but I'd just about given\n\
-up hope!\n\
-Is it true? Have you\n\
-really beaten Bowser? And\n\
-restored the Stars to the\n\
-castle?\n\
-And saved the Princess?\n\
-I knew you could do it!\n\
-Now I have a very special\n\
-message for you.\n\
-『Thanks for playing Super\n\
-Mario 64! This is the\n\
-end of the game, but not\n\
-the end of the fun." \
-KEEP_ON_PLAYING "』\n\
+Ets realment tu?\n\
+Fa tant de temps de la\n\
+nostra darrera aventura!\n\
+M'havien dit que et\n\
+trobaria si esperava\n\
+aquし , perた  era a punt\n\
+de rendir-me!.\n\
+え s aixた  cert? Has\n\
+derrotat en Bowser? I\n\
+has recuperat les\n\
+Estrelles del castell?\n\
+I salvat la Princesa?\n\
+Sabia que series capaむ !\n\
+Ara tinc uns missatges\n\
+molt especials per a tu.\n\
+『Grま cies per jugar Super\n\
+Mario 64! Aquesta さ s la\n\
+fi del joc, perた  no pas\n\
+el final de la diversiす .\n\
+Volem que segueixis\n\
+jugant, per aixた  tenim\n\
+una cosa per tu.\n\
+Esperem que t'agradi!\n\
+Disfruta-ho!!』\n\
 \n\
-The Super Mario 64 Team"))
+\n\
+L'Equip de Super Mario 64\n\
+Aixた  no さ s tot!\n\
+Algせ  mさ s vol dir-te\n\
+quelcom abans que\n\
+segueixis jugant.\n\
+『Moltes grま cies per\n\
+jugar la traducciす \n\
+catalana de\n\
+Super Mario 64!\n\
+Esperem de tot cor que\n\
+l'hagueu disfrutat tant\n\
+com nosaltres duent a\n\
+terme la localitzaciす .\n\
+Ens trobem a la propera\n\
+aventura digital\n\
+en catalま !』\n\
+Projecte 'Ce Trencada'"))
 
+// FET
 DEFINE_DIALOG(DIALOG_162, 1, 4, 30, 200, _("\
-No, no, no! Not you\n\
-again! I'm in a great\n\
-hurry, can't you see?\n\
+No, no, no! Tu de nou!\n\
+Tinc molta pressa,\n\
+さ s que no ho veus?\n\
 \n\
-I've no time to squabble\n\
-over Stars. Here, have it.\n\
-I never meant to hide it\n\
-from you...\n\
-It's just that I'm in such\n\
-a rush. That's it, that's\n\
-all. Now, I must be off.\n\
-Owww! Let me go!"))
+No tinc temps per\n\
+discutir sobre Estrelles.\n\
+Tさ . Queda-te-la. No tenia\n\
+pensat pas amagar-te-la...\n\
+Nomさ s m'he d'afanyar.\n\
+Bま sicament, aixた  さ s tot.\n\
+Ja me n'he d'anar.\n\
+Auuu! Deixa'm anar!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_163, 1, 5, 30, 200, _("\
-Noooo! You've really\n\
-beaten me this time,\n\
-Mario! I can't stand\n\
-losing to you!\n\
+Nooo! Sお  que m'has\n\
+derrotat aquest cop,\n\
+Mario! No puc suportar\n\
+perdre contra tu!\n\
 \n\
-My troops...worthless!\n\
-They've turned over all\n\
-the Power Stars! What?!\n\
-There are 120 in all???\n\
+Totes les tropes... inせ tils!\n\
+Han entregat totes les\n\
+Estrelles de Poder! Quこ ?!\n\
+Que n'hi havia 120???\n\
 \n\
-Amazing! There were some\n\
-in the castle that I\n\
-missed??!!\n\
+Increみ ble! Em vaig\n\
+deixar algunes\n\
+al castell?!!!\n\
 \n\
 \n\
-Now I see peace\n\
-returning to the world...\n\
-Oooo! I really hate that!\n\
-I can't watch--\n\
-I'm outta here!\n\
-Just you wait until next\n\
-time. Until then, keep\n\
-that Control Stick\n\
-smokin'!\n\
-Buwaa ha ha!"))
+Ja veig com la pau\n\
+va tornant al mす n!\n\
+Oooh! Com ho odio!\n\
+No puc ni mirar-m'ho,\n\
+marxo d'aquお !\n\
+Tu espera't a la\n\
+propera. Fins llavors,\n\
+segueix donant-li canya\n\
+al comandament!\n\
+Buaa ha ha!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_164, 1, 4, 30, 200, _("\
-Mario! What's up, pal?\n\
-I haven't been on the\n\
-slide lately, so I'm out\n\
-of shape.\n\
-Still, I'm always up for a\n\
-good race, especially\n\
-against an old sleddin'\n\
-buddy.\n\
-Whaddya say?\n\
-Ready...set...\n\
+Mario! Quこ , com va?\n\
+No he estat al tobogan\n\
+せ ltimament, no estic\n\
+en forma.\n\
+Tanmateix, sempre accepto\n\
+una bona cursa, sobretot\n\
+contra un vell company de\n\
+lliscades. Quこ  me'n dius?\n\
+Preparats... Llestos...\n\
 \n\
-//Go//// Don't Go"))
+//Ja//// Ara no"))
 
+// FET
 DEFINE_DIALOG(DIALOG_165, 1, 5, 30, 200, _("\
-I take no responsibility\n\
-whatsoever for those who\n\
-get dizzy and pass out\n\
-from running around\n\
-this post."))
+No assumeixo cap mena de\n\
+responsabilitat per\n\
+aquells que es maregin\n\
+i es desmaみ n al donar\n\
+voltes a aquest rこ tol."))
 
+// FET
 DEFINE_DIALOG(DIALOG_166, 1, 4, 30, 200, _("\
-I'll be back soon.\n\
-I'm out training now,\n\
-so come back later.\n\
-//--Koopa the Quick"))
+Tornarさ  aviat.\n\
+Sす c entrenant ara,\n\
+vine mさ s tard.\n\
+//--Koopa el Rま pid"))
 
+// FET
 DEFINE_DIALOG(DIALOG_167, 1, 4, 30, 200, _("\
-Princess Toadstool's\n\
-castle is just ahead.\n\
+El castell de la\n\
+Princesa さ s davant\n\
+mateix.\n\
 \n\
-\n\
-Press [A] to jump, [Z] to\n\
-crouch, and [B] to punch,\n\
-read a sign, or grab\n\
-something.\n\
-Press [B] again to throw\n\
-something you're holding."))
+Prem [A] per saltar,\n\
+[Z] per ajupir-te, [B]\n\
+per colpejar, llegir un\n\
+cartell o agafar quelcom.\n\
+Prem [B] de nou per\n\
+deixar-ho anar."))
 
+// FET
 DEFINE_DIALOG(DIALOG_168, 1, 5, 30, 200, _("\
-Hey! Knock it off! That's\n\
-the second time you've\n\
-nailed me. Now you're\n\
-asking for it, linguine\n\
-breath!"))
+Ei! Prou ja! Aquesta さ s\n\
+la segona vegada que\n\
+em trepitjes. Tu t'ho\n\
+has buscat. Ara rebrま s,\n\
+lampista del dimoni!"))
 
+// FET
 DEFINE_DIALOG(DIALOG_169, 1, 4, 30, 200, _("\
-Keep out!\n\
-That means you!\n\
-Arrgghh!\n\
-\n\
-Anyone entering this cave\n\
-without permission will\n\
-meet certain disaster."))
+Ep, tu, arruix! Si goses\n\
+entrar en aquesta cova\n\
+sense es meu permし s, te'n\n\
+durま s s'almud pes cap!\n\
+Te'n caurま  una de grossa,\n\
+vaja! No, i no diguis que\n\
+no t'he avisat,\n\
+bergantot!"))

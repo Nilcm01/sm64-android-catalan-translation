@@ -1530,6 +1530,51 @@ ALIGNED8 static const u8 texture_menu_font_char_period[] = {
 ALIGNED8 static const u8 texture_menu_font_char_ampersand[] = {
 #include "levels/menu/main_menu_seg7_us.0B800.ia8.inc.c"
 };
+
+// 0x0700AF48
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_u[] = {
+#include "levels/menu/main_menu_seg7_us.0AF48.ia8.inc.c"
+};
+
+// 0x0700AF88
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_c[] = {
+#include "levels/menu/main_menu_seg7_us.0AF88.ia8.inc.c"
+};
+
+// 0x0700AFC8
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_o[] = {
+#include "levels/menu/main_menu_seg7_us.0AFC8.ia8.inc.c"
+};
+
+// 0x0700B008
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_ka[] = {
+#include "levels/menu/main_menu_seg7_us.0B008.ia8.inc.c"
+};
+
+// 0x0700B048
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_ki[] = {
+#include "levels/menu/main_menu_seg7_us.0B048.ia8.inc.c"
+};
+
+// 0x0700B088
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_ku[] = {
+#include "levels/menu/main_menu_seg7_us.0B088.ia8.inc.c"
+};
+
+// 0x0700B0C8
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_ke[] = {
+#include "levels/menu/main_menu_seg7_us.0B0C8.ia8.inc.c"
+};
+
+// 0x0700B5C8
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_he[] = {
+#include "levels/menu/main_menu_seg7_us.0B5C8.ia8.inc.c"
+};
+
+// 0x0700B608
+ALIGNED8 static const u8 texture_menu_font_char_us_hiragana_ho[] = {
+#include "levels/menu/main_menu_seg7_us.0B608.ia8.inc.c"
+};
 #endif
 
 #ifdef VERSION_EU
@@ -1634,14 +1679,14 @@ const u8 *const menu_font_lut[] = {
           0x0,       0x0,       0x0,       0x0,
           0x0,       0x0,       0x0,       0x0,
           0x0,       0x0, texture_menu_font_char_apostrophe, texture_menu_font_char_period,
-    texture_menu_font_char_mface1, texture_menu_font_char_mface2,       0x0,       0x0,
+    texture_menu_font_char_mface1, texture_menu_font_char_mface2, texture_menu_font_char_us_hiragana_u, texture_menu_font_char_us_hiragana_c,
+    texture_menu_font_char_us_hiragana_o, texture_menu_font_char_us_hiragana_ka, texture_menu_font_char_us_hiragana_ki, texture_menu_font_char_us_hiragana_ku,
+    texture_menu_font_char_us_hiragana_ke, 0x0,       0x0,       0x0,
           0x0,       0x0,       0x0,       0x0,
           0x0,       0x0,       0x0,       0x0,
           0x0,       0x0,       0x0,       0x0,
           0x0,       0x0,       0x0,       0x0,
-          0x0,       0x0,       0x0,       0x0,
-          0x0,       0x0,       0x0,       0x0,
-          0x0,       0x0,       0x0,       0x0,
+texture_menu_font_char_us_hiragana_he, texture_menu_font_char_us_hiragana_ho,      0x0,       0x0,
           0x0,       0x0,       0x0,       0x0,
           0x0,       0x0,       0x0,       0x0,
           0x0,       0x0,       0x0,       0x0,

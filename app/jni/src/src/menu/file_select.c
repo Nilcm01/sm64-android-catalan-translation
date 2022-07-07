@@ -1737,10 +1737,10 @@ void print_save_file_star_count(s8 fileIndex, s16 x, s16 y) {
     #define MARIOTEXT_X1 92
     #define MARIOTEXT_X2 207
 #elif VERSION_US
-    #define SELECT_FILE_X 93
+    #define SELECT_FILE_X 47
     #define SCORE_X 52
-    #define COPY_X 117
-    #define ERASE_X 177
+    #define COPY_X 116
+    #define ERASE_X 171
     #define SOUNDMODE_X1 sSoundTextX
     #define SAVEFILE_X1 92
     #define SAVEFILE_X2 209
@@ -1844,8 +1844,8 @@ void print_main_lang_strings(void) {
 #define CHECK_FILE_X 90
 #define NOSAVE_DATA_X1 90
 #else
-#define CHECK_FILE_X 95
-#define NOSAVE_DATA_X1 99
+#define CHECK_FILE_X 67
+#define NOSAVE_DATA_X1 116
 #endif
 
 /**
@@ -1882,8 +1882,8 @@ void score_menu_display_message(s8 messageID) {
     #define ERASEFILE_X1 centeredX
 #else
     #define RETURN_X     44
-    #define COPYFILE_X1  135
-    #define ERASEFILE_X1 231
+    #define COPYFILE_X1  142
+    #define ERASEFILE_X1 240
 #endif
 
 #ifdef VERSION_EU
@@ -1971,12 +1971,12 @@ void print_score_menu_strings(void) {
     #define COPYCOMPLETE_X centeredX
     #define SAVE_EXISTS_X1 centeredX
 #else
-    #define NOFILE_COPY_X  119
-    #define COPY_FILE_X    104
-    #define COPYIT_WHERE_X 109
-    #define NOSAVE_DATA_X2 101
-    #define COPYCOMPLETE_X 110
-    #define SAVE_EXISTS_X1 110
+    #define NOFILE_COPY_X  114
+    #define COPY_FILE_X    78
+    #define COPYIT_WHERE_X 125
+    #define NOSAVE_DATA_X2 125
+    #define COPYCOMPLETE_X 115
+    #define SAVE_EXISTS_X1 125
 #endif
 
 /**
@@ -2082,8 +2082,8 @@ void copy_menu_update_message(void) {
     #define VIEWSCORE_X1 centeredX
     #define ERASEFILE_X2 centeredX
 #else
-    #define VIEWSCORE_X1 128
-    #define ERASEFILE_X2 230
+    #define VIEWSCORE_X1 145
+    #define ERASEFILE_X2 241
 #endif
 
 /**
@@ -2232,10 +2232,10 @@ void print_erase_menu_prompt(s16 x, s16 y) {
     #define MARIO_ERASED_X   centeredX
     #define SAVE_EXISTS_X2   centeredX
 #else
-    #define ERASE_FILE_X     98
-    #define NOSAVE_DATA_X3   100
+    #define ERASE_FILE_X     78
+    #define NOSAVE_DATA_X3   122
     #define MARIO_ERASED_VAR 6
-    #define MARIO_ERASED_X   100
+    #define MARIO_ERASED_X   115
     #define SAVE_EXISTS_X2   100
 #endif
 
@@ -2334,8 +2334,8 @@ void erase_menu_update_message(void) {
 #define VIEWSCORE_X2 133
 #define COPYFILE_X2 223
 #else
-#define VIEWSCORE_X2 127
-#define COPYFILE_X2 233
+#define VIEWSCORE_X2 145
+#define COPYFILE_X2 241
 #endif
 
 /**
@@ -2581,17 +2581,26 @@ void print_score_file_star_score(s8 fileIndex, s16 courseIndex, s16 x, s16 y) {
 #if defined(VERSION_JP) || defined(VERSION_SH)
     #define MARIO_X 28
     #define FILE_LETTER_X 86
+#ifdef VERSION_JP
+    #define LEVEL_NUM_PAD 0
+    #define SECRET_STARS_PAD 0
+#else
+    #define LEVEL_NUM_PAD 5
+    #define SECRET_STARS_PAD 10
+#endif
     #define LEVEL_NAME_X 23
-    #define SECRET_STARS_X 152
+    #define STAR_SCORE_X 152
     #define MYSCORE_X 237
     #define HISCORE_X 237
 #else
     #define MARIO_X 25
     #define FILE_LETTER_X 95
-    #define LEVEL_NAME_X 29
-    #define SECRET_STARS_X 171
-    #define MYSCORE_X 238
-    #define HISCORE_X 231
+    #define LEVEL_NUM_PAD 3
+    #define SECRET_STARS_PAD 6
+    #define LEVEL_NAME_X 0
+    #define STAR_SCORE_X 191
+    #define MYSCORE_X 254
+    #define HISCORE_X 246
 #endif
 
 #ifdef VERSION_EU
@@ -2601,25 +2610,23 @@ void print_score_file_star_score(s8 fileIndex, s16 courseIndex, s16 x, s16 y) {
 /**
  * Prints save file score strings that shows when a save file is chosen inside the score menu.
  */
- void print_save_file_scores(s8 fileIndex) {
+void print_save_file_scores(s8 fileIndex) {
 #ifndef VERSION_EU
     unsigned char textMario[] = { TEXT_MARIO };
-#endif
-#ifndef VERSION_US
+#ifdef VERSION_JP
     unsigned char textFileLetter[] = { TEXT_ZERO };
-#endif
-#if defined(VERSION_JP) || defined(VERSION_SH)
     void **levelNameTable = segmented_to_virtual(seg2_course_name_table);
 #endif
-#ifndef VERSION_EU
     unsigned char textHiScore[] = { TEXT_HI_SCORE };
     unsigned char textMyScore[] = { TEXT_MY_SCORE };
-    #ifdef VERSION_US
-        unsigned char textFileLetter[] = { TEXT_ZERO };
-        void **levelNameTable = segmented_to_virtual(seg2_course_name_table);
-    #endif
+#if defined(VERSION_US) || defined(VERSION_SH)
+    unsigned char textFileLetter[] = { TEXT_ZERO };
+    void **levelNameTable = segmented_to_virtual(seg2_course_name_table);
+#endif
 #else
+    unsigned char textFileLetter[] = { TEXT_ZERO };
     void **levelNameTable;
+
     switch (sLanguageMode) {
         case LANGUAGE_ENGLISH:
             levelNameTable = segmented_to_virtual(eu_course_strings_en_table);
@@ -2649,44 +2656,36 @@ void print_score_file_star_score(s8 fileIndex, s16 courseIndex, s16 x, s16 y) {
     gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, sTextBaseAlpha);
 
 //! Huge print list, for loops exist for a reason!
-//  PADCHAR is used to difference an x position value between
-//  JP and US when the course number is only one digit.
-#if defined(VERSION_JP) || defined(VERSION_SH)
-    #define PADCHAR 0
-    #define PRINT_COURSE_SCORES(courseIndex, pad)                                                               \
-        print_menu_generic_string(23 + (pad * 3), 23 + 12 * courseIndex, segmented_to_virtual(levelNameTable[courseIndex - 1]));  \
-        print_score_file_star_score(fileIndex, courseIndex - 1, 152, 23 + 12 * courseIndex);                        \
-        print_score_file_course_coin_score(fileIndex, courseIndex - 1, 213, 23 + 12 * courseIndex);
-#else
-    #define PADCHAR 1
-    #define PRINT_COURSE_SCORES(courseIndex, pad)                                                               \
-        print_menu_generic_string(23 + (pad * 3), 23 + 12 * courseIndex, segmented_to_virtual(levelNameTable[courseIndex - 1]));  \
-        print_score_file_star_score(fileIndex, courseIndex - 1, 171, 23 + 12 * courseIndex);                        \
-        print_score_file_course_coin_score(fileIndex, courseIndex - 1, 213, 23 + 12 * courseIndex);
-#endif
-    // Course values are indexed, from Bob-omb Battlefield to Rainbow Ride
-    PRINT_COURSE_SCORES(COURSE_BOB, PADCHAR) // BOB
-    PRINT_COURSE_SCORES(COURSE_WF, PADCHAR) // WF
-    PRINT_COURSE_SCORES(COURSE_JRB, PADCHAR) // JRB
-    PRINT_COURSE_SCORES(COURSE_CCM, PADCHAR) // CCM
-    PRINT_COURSE_SCORES(COURSE_BBH, PADCHAR) // BBH
-    PRINT_COURSE_SCORES(COURSE_HMC, PADCHAR) // HMC
-    PRINT_COURSE_SCORES(COURSE_LLL, PADCHAR) // LLL
-    PRINT_COURSE_SCORES(COURSE_SSL, PADCHAR) // SSL
-    PRINT_COURSE_SCORES(COURSE_DDD, PADCHAR) // DDD
-    PRINT_COURSE_SCORES(COURSE_SL, 0)  // SL
-    PRINT_COURSE_SCORES(COURSE_WDW, 0) // WDW
-    PRINT_COURSE_SCORES(COURSE_TTM, 0) // TTM
-    PRINT_COURSE_SCORES(COURSE_THI, 0) // THI
-    PRINT_COURSE_SCORES(COURSE_TTC, 0) // TTC
-    PRINT_COURSE_SCORES(COURSE_RR, 0) // RR
-#undef PRINT_COURSE_SCORES
-#undef PADCHAR
+#define PRINT_COURSE_SCORES(courseIndex, pad) \
+    print_menu_generic_string(LEVEL_NAME_X + (pad * LEVEL_NUM_PAD), 23 + 12 * courseIndex, \
+                              segmented_to_virtual(levelNameTable[courseIndex - 1])); \
+    print_score_file_star_score(fileIndex, courseIndex - 1, STAR_SCORE_X, 23 + 12 * courseIndex); \
+    print_score_file_course_coin_score(fileIndex, courseIndex - 1, 213 + 20, 23 + 12 * courseIndex);
 
-    // Print level name
-    print_menu_generic_string(LEVEL_NAME_X, 215, segmented_to_virtual(levelNameTable[25]));
-    // Print castle secret stars
-    print_score_file_castle_secret_stars(fileIndex, SECRET_STARS_X, 215);
+    // Course values are indexed, from Bob-omb Battlefield to Rainbow Ride
+    PRINT_COURSE_SCORES(COURSE_BOB, 1)
+    PRINT_COURSE_SCORES(COURSE_WF,  1)
+    PRINT_COURSE_SCORES(COURSE_JRB, 1)
+    PRINT_COURSE_SCORES(COURSE_CCM, 1)
+    PRINT_COURSE_SCORES(COURSE_BBH, 1)
+    PRINT_COURSE_SCORES(COURSE_HMC, 1)
+    PRINT_COURSE_SCORES(COURSE_LLL, 1)
+    PRINT_COURSE_SCORES(COURSE_SSL, 1)
+    PRINT_COURSE_SCORES(COURSE_DDD, 1)
+    PRINT_COURSE_SCORES(COURSE_SL,  0)
+    PRINT_COURSE_SCORES(COURSE_WDW, 0)
+    PRINT_COURSE_SCORES(COURSE_TTM, 0)
+    PRINT_COURSE_SCORES(COURSE_THI, 0)
+    PRINT_COURSE_SCORES(COURSE_TTC, 0)
+    PRINT_COURSE_SCORES(COURSE_RR,  0)
+
+#undef PRINT_COURSE_SCORES
+
+    // Print castle secret stars text
+    print_menu_generic_string(LEVEL_NAME_X + SECRET_STARS_PAD, 23 + 12 * 16,
+                              segmented_to_virtual(levelNameTable[25]));
+    // Print castle secret stars score
+    print_score_file_castle_secret_stars(fileIndex, STAR_SCORE_X, 23 + 12 * 16);
 
     // Print current coin score mode
     if (sScoreFileCoinScoreMode == 0) {
