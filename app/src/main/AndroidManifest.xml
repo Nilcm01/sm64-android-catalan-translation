@@ -56,7 +56,7 @@
 
          An example Java class can be found in README-android.md
     -->
-    <application android:label="Super Mario 64 (en Català)"
+    <application android:label="Super Mario 64 (Català)"
         android:allowBackup="true"
         android:icon="@mipmap/sm64cat"
         android:roundIcon="@mipmap/sm64cat_round"
@@ -68,7 +68,7 @@
          -->
      
         <activity android:name="sm64portActivity"
-            android:label="Super Mario 64 (en Català)"
+            android:label="Super Mario 64 (Català)"
             android:alwaysRetainTaskState="true"
             android:launchMode="singleInstance"
             android:exported="true"
