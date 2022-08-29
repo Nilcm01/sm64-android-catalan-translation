@@ -7,19 +7,23 @@ camp de batalla. Trobarま s\n\
 les Estrelles de Poder que\n\
 en Bowser va robar dins\n\
 els mす ns dels quadres.\n\
+\n\
 Primerament, parla amb el\n\
 col&lega Bob-omb (prem\n\
 [B] per parlar). Tant ell\n\
 com els seus camarades\n\
 d'altres ま rees segur et\n\
 faran un bon cop de mま .\n\
+\n\
 Per a llegir cartells,\n\
 atura't davant d'un i\n\
 prem [B]. Prem [A] o [B]\n\
 per seguir llegint.\n\
+\n\
+\n\
 Tambさ  pots parlar amb\n\
 altres individus\n\
-encarant-hi i prement [B]."))
+encarant-los i prement [B]."))
 
 // FET
 DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
@@ -449,7 +453,7 @@ des de fora el castell de\n\
 la Princesa Peach.\n\
 \n\
 En Mario acaba d'arribar\n\
-a l'escena, i l'estarem\n\
+a l'escena, i estarem\n\
 filmant tota la seva\n\
 aventura al castell\n\
 mentre cerca totes les\n\
@@ -486,7 +490,7 @@ la Palanca de Control.\n\
 \n\
 Usualment veurま s en Mario\n\
 amb la cま mera d'en\n\
-Lakitu. さ s la cま mera\n\
+Lakitu. え s la cま mera\n\
 recomanada per jugar\n\
 normalment.\n\
 Canvia l'angle d'aquesta\n\
@@ -582,7 +586,7 @@ penya-segat i penjar-t'hi.\n\
 Tambさ  hi pots baixar\n\
 si et mous a poc a poc.\n\
 Quan vulguis deixar-te\n\
-anar prem [Z] or empeny la\n\
+anar prem [Z] o empeny la\n\
 Palanca de Control cap a\n\
 l'esquena d'en Mario.\n\
 Per escalar empeny amunt\n\
@@ -684,17 +688,17 @@ La prま ctica fa el mestre!"))
 
 // FET
 DEFINE_DIALOG(DIALOG_050, 1, 4, 30, 200, _("\
-Mantenint [Z] pots ajupir-te\n\
+Mantさ  [Z] per ajupir-te\n\
 i lliscar per pendents.\n\
 Prem [Z] sent enlaire\n\
 per fer un Salt Bomba!\n\
 Si t'atures, t'ajups i\n\
 saltes farま s un Salt\n\
 Mortal Enrere!\n\
-Ho agafes?\n\
-I encara mさ s. Ajupeix-te\n\
+Ho vas entenent?\n\
+I encara mさ s. Ajup-te\n\
 i salta per fer un Salt\n\
-Llarg! O ajupeix-te i\n\
+Llarg! O ajup-te i\n\
 camina per... Oblida-ho."))
 
 // FET
