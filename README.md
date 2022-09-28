@@ -1,141 +1,140 @@
-# Super Mario 64 Android Port
-This is a port of the reconstructed Super Mario 64 source code to Android using SDL2 with OpenGL ES 2.0.
+# Super Mario 64 en Català (Android)
 
-It has cross-platform Touch Controls, Audio works, it saves the game to the app's internal storage and you can play it with an external keyboard or controller as well (tested on PS3 controller).
+La traducció catalana de Super Mario 64 ha estat duta a terme per **Nil CM** amb **Projecte 'Ce Trencada'** per gaudir el joc en la nostra llengua.
+Ha estat traduït en tres versions diferents: PC (Windows/Linux), ROM de Nintendo 64 i **Android**; cadascun partint dels repositoris base indicats.
 
-# Branches:
-* `master`: Vanilla SM64 port, barely any modifications.
-* `sm64ex`: Master branch of sm64ex.
-* `sm64ex_nightly`: Nightly branch of sm64ex. Use this one for Render96/SGI models!
+La versió d'Android pren com a base el [Projecte de Port a Android](https://github.com/VDavid003/sm64-port-android-base) per a la construcció de l'app i la [Traducció al Català](https://github.com/Nilcm01/sm64-rom-catalan-translation) per a la build nativa.
+Aquest projecte **no** està relacionat, de cap manera, amb els equips responsables del projecte d'Android o amb Nintendo.
 
-# Build instructions
+Aquest repositori no inclou totes les llibreries necessàries per a compilar el joc.
+Es requereix una còpia prèvia del joc (ROM) per a extreure'n les llibreries. Aquesta ROM ha de ser del següent tipus:
 
-## Android
-Follow instructions [here](https://github.com/VDavid003/sm64-port-android/tree/master)!
+- Regió: **U** o **US** (Estats Units).
+- Extensió: .z64
+- *Exemple: Super Mario 64 (U).z64*
 
-(please note that building on Android is currently incomplete)
+## Versions
 
-## Linux
+Podeu gaudir de Super Mario 64 a diferents plataformes amb les versions que han estat desenvolupades:
 
-**Install dependencies:**
+- **PC (Windows / Linux)**: [Llançaments PC](https://github.com/Nilcm01/sm64-port-catalan-translation/releases)
+- **ROM Nintendo 64**: [Llançaments N64](https://github.com/Nilcm01/sm64-rom-catalan-translation/releases)
+- **Android**: [Llançaments Android](https://github.com/Nilcm01/sm64-android-catalan-translation/releases)
 
-This depends on your distro, but if you can build the PC port and you have Android SDK/NDK and you are able to build Android apps using gradle, you should be fine.
+Per a més informació sobre els llançaments consulteu aquesta pàgina: [SM64-CAT](https://ja.cat/SM64CAT)
 
-**Clone the repository:**
-```sh
-git clone --recursive https://github.com/VDavid003/sm64-port-android-base
-cd sm64-port-android-base
-```
+## Construir els executables
 
-**Copy in your baserom:**
-```sh
-cp /path/to/your/baserom.z64 ./app/jni/src/baserom.us.z64
-```
+### Linux (Debian/Ubuntu)
 
-**Get SDL sources:**
-```sh
-./getSDL.sh
-```
+**1. Instal·leu els prerequisits:**
 
-**Perform native build:**
-```sh
-# if you have more cores available, you can increase the --jobs parameter
-cd app/jni/src
-make --jobs 4
-cd ../../..
-```
+Instel·leu la versió desitjada de l'Android SDK/NDK mitjançant la instal·lació d'Android Studio [aquí](https://developer.android.com/studio).
 
-**Perform Android build:**
-```sh
-./gradlew assembleDebug
-```
+Posteriorment, empreu la següent comanda per a instal·lar els prerequisits de construcció: `sudo apt install -y git build-essential pkg-config libusb-1.0-0-dev libsdl2-dev`.
 
-**Enjoy your apk:**
-```sh
-ls -al ./app/build/outputs/apk/debug/app-debug.apk
-```
+**2. Cloneu el repositori:**
+Cloneu el respositori: `git clone https://github.com/Nilcm01/sm64-android-catalan-translation.git`, el qual crearà el directori `sm64-android-catalan-translation`, llavors moveu-vos-hi amb `cd sm64-android-catalan-translation`.
 
-## Windows
+**3. Col·loqueu la ROM:**
+Col·loqueu una ROM de Super Mario 64 anomenada `baserom.us.z64` al directori arrel del repositori:
+`cp baserom.us.z64 ./app/jni/src/baserom.us.z64`
 
-**Install dependencies:**
+**4. "SDL Sources":**
+`./getSDL.sh`
 
-You'll need everything you need to make Windows builds, and to be able to build Android apps using `gradlew.bat`. This includes Java JDK (with the JDK being JAVA_HOME) and Android SDK/NDK. Every commmand is executed in MSYS2 unless otherwise noted.
+**5. Construcció nativa:**
+Empreu `make VERSION=us` per a construir-lo. Afegiu-hi `-j4` per a millorar la velocitat de construcció (essent el '4' el nombre de nuclis del processador disponibles).
 
-You'll also need `unzip` in MSYS2 MinGW. Do do this, open MSYS2 MinGW, and
-```sh
-pacman -S unzip
-```
+Un cop fet, useu `cd ../../..`,
 
-**Clone the repository:**
-```sh
-git clone --recursive https://github.com/VDavid003/sm64-port-android-base
-```
+**6. Construcció de l'app:**
+`./gradlew assembleDebug`
 
-**Copy in your baserom:**
-Use the file explorer, or whatever you want, just put it in `app/jni/src`, and name it like you'd do on the PC port.
-```sh
-cp /path/to/your/baserom.z64 ./app/jni/src/baserom.us.z64
-```
+**7. Trobar l'app resultant:**
 
-**Get SDL sources:**
-```sh
-./getSDL.sh
-```
+Es trobarà a `./app/build/outputs/apk/debug/app-debug.apk`
 
-**Perform native build:**
-```sh
-# if you have more cores available, you can increase the --jobs parameter
-cd app/jni/src
-make --jobs 4
-cd ../../..
-```
+### Windows
 
-**Perform Android build:**
-Do this in a normal Command Prompt!
-```
-gradlew.bat assembleDebug
-```
+**1. Instal·leu els prerequisits:**
 
-## Docker
+Necessitareu tot el necessari per a contruir apps d'Andoid amb `gradlew.bat`, que inclou el Java SDK/JDK (amb aquest sent-hi a JAVA_HOME).
 
-**Clone the repository:**
+Instal·leu i actualitzeu MSYS2, seguint tots els passos llistats a https://www.msys2.org/.
+
+Des del menú d'inici, executeu MSYS2 MinGW i instal·leu els paquets requerits depenent del vostre sistema ( **NO** executeu "MSYS2 MSYS"):
+  * 64-bit: Executeu "MSYS2 MinGW 64-bit" i instal·leu: `pacman -S git make python3 mingw-w64-x86_64-gcc`
+  * 32-bit (també funciona en sistemes de 64-bits): Executeu "MSYS2 MinGW 32-bit" i instal·leu: `pacman -S git make python3 mingw-w64-i686-gcc`
+  * **NO** instal·leu per error el paquet anomenat només `gcc`.
+
+El terminal d'MSYS2 té un _current working directory_ (directori actual de treball) que inicialment és `C:\msys64\home\<username>` (directori d'usuari). A la finestra de comandes veureu el directori de treball actual de color groc. `~` és un àlies per a directori d'usuari. _Opcional:_ Podeu canviar el directori actual de treball a `Documents` usant `cd /c/Users/<username>/Documents`.
+
+Addicionalment, executeu la següent comanda: `pacman -S unzip`
+
+**2. Cloneu el repositori:**
 ```sh
 git clone --recursive https://github.com/VDavid003/sm64-port-android-base
 ```
 
-**Create the build image:**
-```sh
-# navigate into newly cloned repo
-cd sm64-port-android-base
-# build the docker image
-docker build . -t sm64_android
-```
-**Copy in your baserom:**
-```sh
-cp /path/to/your/baserom.z64 ./app/jni/src/baserom.us.z64
-```
+**2. Cloneu el repositori:**
+Cloneu el respositori: `git clone https://github.com/Nilcm01/sm64-android-catalan-translation.git`, el qual crearà el directori `sm64-android-catalan-translation`, llavors moveu-vos-hi amb `cd sm64-android-catalan-translation`.
 
-**Setup symlinks for SDL:**
-```sh
-docker run --rm -v $(pwd):/sm64 sm64_android sh -c "ln -nsf /SDL2-2.0.12/src /sm64/app/jni/SDL/src"
-docker run --rm -v $(pwd):/sm64 sm64_android sh -c "ln -nsf /SDL2-2.0.12/include /sm64/app/jni/SDL/include"
-```
+**3. Col·loqueu la ROM:**
+Col·loqueu una ROM de Super Mario 64 anomenada `baserom.us.z64` al directori arrel del repositori:
+`cp baserom.us.z64 ./app/jni/src/baserom.us.z64`
 
-**Perform native build:**
-```sh
-# if you have more cores available, you can increase the --jobs parameter
-docker run --rm -v $(pwd):/sm64 sm64_android sh -c "cd /sm64/app/jni/src && make --jobs 4"
-```
+Alternativament, podeu col·locar-la al directori corresponent mitjançant l'Explorador de Fitxers de Windows.
 
-**Perform Android build:**
-```sh
-docker run --rm -v $(pwd):/sm64 sm64_android sh -c "./gradlew assembleDebug"
-```
+**4. "SDL Sources":**
+`./getSDL.sh`
 
-**Enjoy your apk:**
-```sh
-ls -al ./app/build/outputs/apk/debug/app-debug.apk
-```
+**5. Construcció nativa:**
+Empreu `make VERSION=us` per a construir-lo. Afegiu-hi `-j4` per a millorar la velocitat de construcció (essent el '4' el nombre de nuclis del processador disponibles).
 
-# Configuration
-If you want to customize the build with build options, you should make the native build with those options first (put them after the make command like on normal repos), then before performing the Android build, edit `app/jni/src/Android.mk` and enable the options you'd like.
+Un cop fet, useu `cd ../../..`,
+
+**6. Construcció de l'app:**
+Empreu aquesta comanda al terminal de Windows: `gradlew.bat assembleDebug`
+
+**7. Trobar l'app resultant:**
+
+Es trobarà a `./app/build/outputs/apk/debug/app-debug.apk`
+
+### Android Studio (Windows/Linux)
+
+Si ho preferiu, també es pot dur a terme la construcció de l'app mitjançant Android Studio (*nota del desenvolupador: aquesta opció és la més senzilla*). que el podeu instal·lar des [d'aquí](https://developer.android.com/studio).
+
+**1. Seguir els passos originals**
+
+Seguiu els passos llistats a l'apartat del vostre sistema operatiu des del pas 1 al 5.
+
+**2. Obrir el projecte**
+
+Obriu el directori `sm64-android-catalan-translation` amb Android Studio.
+
+**3. Construir l'app**
+
+Premeu el botó "build" per a construir l'app.
+
+**4. Troba l'app resultant:**
+
+Es trobarà a `./app/build/outputs/apk/debug/app-debug.apk`
+
+## Informació
+
+Per a més informació sobre la build nativa, llegiu la documentació del següent repositori: [SM64 en Català](https://github.com/Nilcm01/sm64-rom-catalan-translation)
+
+## Contacta'ns
+
+Podeu posar-vos en contacte amb nosaltres de la forma que més preferiu:
+
+**Nil CM**
+- Correu electrònic: nilcm01@outlook.es
+- Twitter: https://twitter.com/PelochoRockea
+
+**Projecte 'Ce Trencada'**
+- Web: https://www.cetrencada.cat
+- Correu electrònic: projectecetrencada@gmail.com
+- Twitter: https://twitter.com/prcetrencada/
+- Discord: https://t.co/Gj1V7LRUsf
